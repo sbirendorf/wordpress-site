@@ -1,0 +1,147 @@
+/**
+ * Global CSS Rules
+ */
+
+ *, *:before, *:after {
+ 	box-sizing: border-box;
+ }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $bodyFont;
+	color: $grey;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $mainFont;
+	color: $black;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Icons
+ */
+.icon {
+	display: inline-block;
+	font-family: $iconFont;
+}
+
+/**
+ * Buttons
+ */
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: $mainFont;
+	text-decoration: none;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	font-weight: 700;
+	border: 0;
+
+	&.orange {
+		background: $orange;
+		color: #fff;
+	}
+
+	&.link {
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $darkBlue;
+		box-shadow: none;
+	}
+
+	&.green {
+		background: $green;
+		color: #fff;
+	}
+}
+
+/**
+ * Global Layouts
+ */
+.container {
+	position: relative;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/**
+ * Forms
+ */
+.field {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+
+	input {
+		width: 100%;
+		display: block;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid $grey;
+	}
+
+	label {
+		color: $grey;
+		font-family: $mainFont;
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	&.checkbox {
+
+		input {
+			display: inline-block;
+			width: auto;
+			margin-right: 10px;
+		}
+		label {
+			position: relative;
+			display: inline;
+			color: #fff;
+
+			a {
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&.actions {
+		button {
+			display: block;
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+}
+
+.actions-extra {
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 20px auto 0;
+	font-family: $mainFont;
+}
+
+/**
+ * Actions below every section
+ */
+.meta-actions {
+
+}

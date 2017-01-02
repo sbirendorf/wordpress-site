@@ -1,0 +1,47 @@
+/**
+ * Global Helper Functions
+ */
+ //Angular Breakpoints
+ @mixin mdBreakpoint($point) {
+ 	@if $point == xs {
+ 		@media screen and (max-width: 599px) { @content; }
+ 	}
+ 	@if $point == gtXs {
+ 		@media screen and (min-width: 600px) { @content; }
+ 	}
+ 	@if $point == sm {
+ 		@media screen and (min-width: 600px) and (max-width: 959px) { @content; }
+ 	}
+ 	@if $point == gtSm {
+ 		@media screen and (min-width: 960px) { @content; }
+ 	}
+ 	@if $point == md {
+ 		@media screen and (min-width: 960px) and (max-width: 1279px) { @content; }
+ 	}
+ 	@if $point == gtMd {
+ 		@media screen and (min-width: 1280px) { @content; }
+ 	}
+ 	@if $point == lg {
+ 		@media screen and (min-width: 1280px) and (max-width: 1919px) { @content; }
+ 	}
+ 	@if $point == gtLg {
+ 		@media screen and (min-width: 1920px) { @content; }
+ 	}
+ 	@if $point == xl {
+ 		@media screen and (min-width: 1920px) { @content; }
+ 	}
+ }
+
+/**
+ * Clearfix.
+ */
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+}
