@@ -20,6 +20,10 @@
 		float: left;
 		transition: all 0.5s ease;
 
+		@include mdBreakpoint(gtMd) {
+			display: none;
+		}
+
 		span {
 			display: block;
 			position: relative;
@@ -98,6 +102,7 @@
 .right-nav {
 	float: right;
 	display: none;
+	margin: 15px 0;
 
 	@include mdBreakpoint(gtXs) {
 		display: block;

@@ -65,6 +65,11 @@ h6 {
 		background: $green;
 		color: #fff;
 	}
+
+	&.blue {
+		background: $lightBlue;
+		color: #fff;
+	}
 }
 
 /**
@@ -143,5 +148,12 @@ h6 {
  * Actions below every section
  */
 .meta-actions {
+	margin-top: 20px;
 
+	.button {
+		display: block;
+		text-align: center;
+		max-width: 350px;
+		margin: 0 auto;
+	}
 }

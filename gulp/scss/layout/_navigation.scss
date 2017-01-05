@@ -1,3 +1,34 @@
 #MainNavigation {
 	display: none;
+
+	@include mdBreakpoint(gtMd) {
+		display: block;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+		background: $lightBlue;
+		color: #fff;
+		position: fixed;
+		top: 70px;
+		left: 0;
+		right: 0;
+		z-index: 101;
+		padding: 20px 0;
+		font-size: 16px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin-right: 40px;
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		font-family: $mainFont;
+	}
 }

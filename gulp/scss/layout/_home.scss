@@ -3,9 +3,25 @@
  */
 #Hero {
 	padding: 110px 20px 40px;
-	background: url('../img/home/top-hero-banner-house-mobile.jpg') 0 0 no-repeat;
+	background-image: url('../img/home/top-hero-banner-house-mobile.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
 	background-size: cover;
 	color: #fff;
+
+	@include mdBreakpoint(sm) {
+		background-image: url('../img/home/top-hero-banner-ipad-p.jpg');
+	}
+
+	@include mdBreakpoint(gtSm) {
+		padding: 150px 0 80px;
+		background-image: url('../img/home/top-hero-banner-ipad-l.jpg');
+	}
+
+	@include mdBreakpoint(gtMd) {
+		padding: 180px 0 80px;
+		background-image: url('../img/home/top-hero-banner-desktop.jpg');
+	}
 
 	h1,
 	h2,
@@ -13,7 +29,15 @@
 		color: #fff;
 	}
 
-	h1 { font-size: 32px; }
+	h1 {
+		font-size: 32px;
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 48px;
+			text-align: center;
+		}
+
+	}
 
 	h3 {
 		font-size: 24px;
@@ -24,12 +48,21 @@
 		background: rgba(255,255,255,0.8);
 		padding: 10px;
 		border-radius: 3px;
-		margin-top: 20px;
+		vertical-align: top;
+		max-width: 624px;
+		margin: 20px auto 0;
 
 		h2 {
 			color: $black;
 			text-align: center;
 			font-size: 24px;
+
+			@include mdBreakpoint(gtXs) {
+				display: inline-block;
+				margin-left: 10px;
+				margin-right: 20px;
+
+			}
 		}
 
 		select {
@@ -39,6 +72,11 @@
 			margin-top: 10px;
 			border: 1px solid $grey;
 			font-family: $mainFont;
+
+			@include mdBreakpoint(gtXs) {
+				display: inline-block;
+				width: 295px;
+			}
 		}
 	}
 
@@ -80,12 +118,39 @@
 		font-size: 32px;
 		text-align: center;
 		padding: 0 20px;
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 48px;
+		}
+	}
+
+	@extend %clearfix;
+
+	@include mdBreakpoint(sm) {
+		padding: 40px 20px;
+	}
+
+	@include mdBreakpoint(gtSm) {
+		padding: 80px 20px;
 	}
 }
 
 .portal-section {
 	display: block;
 	margin-top: 20px;
+
+	@include mdBreakpoint(sm) {
+		float: right;
+		width: 48%;
+		max-width: 351px;
+	}
+
+	@include mdBreakpoint(gtSm) {
+		float: right;
+		width: 377px;
+		margin-right: 70px;
+
+	}
 
 	h3 {
 		color: $grey;
@@ -94,12 +159,36 @@
 		margin: 0 20px;
 		font-size: 24px;
 		border-top: 1px solid $grey;
+
+		@include mdBreakpoint(gtXs) {
+			border-top: 0;
+			padding: 0 0 20px;
+			margin: 0;
+		}
 	}
 
 	&#RealEstateAgent {
+
 		h3 {
 			border-top: 0;
 			padding: 0 0 20px;
+		}
+
+		@include mdBreakpoint(sm) {
+			float: left;
+
+			.actions {
+				padding-top: 23px;
+			}
+		}
+
+		@include mdBreakpoint(gtSm) {
+			float: left;
+			margin-left: 70px;
+
+			.actions {
+				padding-top: 23px;
+			}
 		}
 	}
 
@@ -107,19 +196,33 @@
 		line-height: 22px;
 		font-size: 14px;
 		padding: 0 20px;
+
+		@include mdBreakpoint(gtXs) {
+			padding: 0;
+		}
 	}
 
 	.img {
 		width: 100%;
 		height: 170px;
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
 
 		&.real-estate {
-			background: url('../img/home/real-estate-image.jpg') 0 0 no-repeat;
+			background-image: url('../img/home/real-estate-image.jpg');
+
+			@include mdBreakpoint(sm) {
+				background-image: url('../img/home/real-estate-image-ip.jpg');
+			}
 		}
 
 		&.lender {
-			background: url('../img/home/lender-image.jpg') 0 0 no-repeat;
+			background-image: url('../img/home/lender-image.jpg');
+
+			@include mdBreakpoint(sm) {
+				background-image: url('../img/home/lender-image-ip.jpg');
+			}
 		}
 	}
 
@@ -140,9 +243,15 @@
 	border-bottom: 1px solid $grey;
 	background: $lightGrey;
 
+	@extend %clearfix;
+
 	h2 {
 		font-size: 32px;
 		text-align: center;
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 48px;
+		}
 	}
 
 	h3 {
@@ -150,18 +259,53 @@
 		font-size: 18px;
 		color: $grey;
 		margin-top: 20px;
+
+		@include mdBreakpoint(sm) {
+			font-size: 20px;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		@include mdBreakpoint(gtSm) {
+			font-size: 24px;
+			text-align: center;
+			line-height: 32px;
+		}
 	}
 
 	.actions {
+
 		img {
 			width: 100%;
 			display: block;
 			margin: 20px 0;
+
+			@include mdBreakpoint(sm) {
+				float: right;
+				max-width: 350px;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				float: right;
+				max-width: 453px;
+				margin-right: 80px;
+			}
 		}
 
 		.button {
 			display: block;
 			text-align: center;
+
+			@include mdBreakpoint(gtXs) {
+				float: left;
+				width: 335px;
+				margin-top: 80px;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				margin-left: 80px;
+				margin-top: 115px
+			}
 		}
 	}
 }
@@ -171,10 +315,18 @@
 	background: $black;
 	color: #fff;
 
+	@include mdBreakpoint(gtSm) {
+		padding: 80px 0;
+	}
+
 	h2 {
 		color: #fff;
 		font-size: 32px;
 		text-align: center;
+
+		@include mdBreakpoint(sm) {
+			font-size: 48px;
+		}
 	}
 
 	.logos {
@@ -184,6 +336,7 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			text-align: center;
 		}
 
 		li {
@@ -192,6 +345,22 @@
 			width: 35%;
 			text-align: center;
 			vertical-align: middle;
+
+			@include mdBreakpoint(gtXs) {
+				width: 18%;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				width: auto;
+				max-width: 150px;
+				text-align: center;
+				margin: 0 40px;
+
+				img {
+					display: block;
+					width: auto;
+				}
+			}
 
 			img {
 				width: 100%;
@@ -205,6 +374,17 @@
 		.testimony {
 			vertical-align: top;
 			margin-top: 40px;
+
+			@include mdBreakpoint(gtXs) {
+				display: inline-block;
+				margin: 40px 10px;
+				max-width: 45%;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				margin: 50px 40px;
+				max-width: 41%;
+			}
 
 			.avatar {
 				position: relative;
@@ -261,6 +441,8 @@
 		.button {
 			display: block;
 			text-align: center;
+			max-width: 350px;
+			margin: 0 auto;
 		}
 	}
 }
@@ -268,15 +450,46 @@
 #Blog {
 	padding: 40px 20px;
 
+	@include mdBreakpoint(gtSm) {
+		padding: 80px 0;
+	}
+
 	h2 {
 		font-size: 32px;
 		text-align: center;
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 48px;
+		}
 	}
 
 	.blog {
 		position: relative;
 		vertical-align: top;
 		margin-top: 40px;
+
+		@include mdBreakpoint(gtXs) {
+			display: inline-block;
+			max-width: 45%;
+		}
+
+		@include mdBreakpoint(gtSm) {
+			margin: 40px 20px;
+		}
+
+		&:nth-child(odd) {
+
+			@include mdBreakpoint(sm) {
+				margin-left: 15px;
+			}
+		}
+
+		&:nth-child(even) {
+
+			@include mdBreakpoint(sm) {
+				margin-right: 15px;
+			}
+		}
 
 		.blog-date {
 			float: left;
