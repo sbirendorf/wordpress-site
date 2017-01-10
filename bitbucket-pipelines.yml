@@ -8,5 +8,5 @@ pipelines:
             - apt-get update # required to install zip
             - apt-get install -y zip # required for packaging up the application
             - pip install boto3==1.3.0 # required for beanstalk_deploy.py
-            - zip -j /tmp/artifact.zip sample_application/* # package up the application for deployment
+            - zip -j /tmp/artifact.zip page/* # package up the application for deployment
             - python beanstalk_deploy.py # run the deployment script
