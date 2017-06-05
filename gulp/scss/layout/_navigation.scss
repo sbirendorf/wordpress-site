@@ -1,18 +1,49 @@
+body.menu-visible {
+	overflow: hidden;
+}
+
 #MainNavigation {
-	display: none;
+	background: $lightBlue;
+	color: $white;
+	height: 100%;
+	font-size: 20px;
+	left: 0;
+	overflow-y: scroll;
+	padding: 100px 20px 40px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 90;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	
+	.menu-visible & {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
 
 	@include mdBreakpoint(gtMd) {
-		display: block;
 		box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-		background: $lightBlue;
-		color: #fff;
-		position: fixed;
-		top: 70px;
-		left: 0;
-		right: 0;
-		z-index: 101;
-		padding: 20px 0;
+		height: auto;
 		font-size: 16px;
+		text-align: left;
+		top: 70px;
+		right: -20px;
+		z-index: 101;
+		overflow-y: visible;
+		padding: 0;
+		width: auto;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	@media screen and (max-width: 733px){
+	    top: 70px;
 	}
 
 	ul {
@@ -21,14 +52,286 @@
 		padding: 0;
 
 		li {
-			display: inline-block;
-			margin-right: 40px;
+			display: block;
+			margin: 0;
+			
+			@include mdBreakpoint(gtMd) {
+				display: inline-block;
+			}
+			
 		}
 	}
 
 	a {
-		color: #fff;
+		border-top: 1px solid transparent;
+		color: $white;
 		text-decoration: none;
 		font-family: $mainFont;
+		display: block;
+		padding: 19px 15px 20px;
+		
+		&:hover {
+			color: rgba(255,255,255,0.6);
+		}
+		
+		@include mdBreakpoint(gtMd) {
+			display: inline-block;
+		}
+			
+	}
+	
+	.menu > .current-menu-item > a,
+	.menu > .current_page_item > a {
+		color: rgba(255,255,255,0.6);
+	}
+	
+	.menu-item-has-children {
+		position: relative;
+	}
+	
+	.sub-menu {
+		@extend .clearfix;
+		background: $white;
+		font-size: 95%;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		width: 100%;
+		-webkit-border-radius: 0 0 4px 4px;
+		-moz-border-radius: 0 0 4px 4px;
+		border-radius: 0 0 4px 4px;
+		-webkit-transition: max-height 0.25s ease-in-out, opacity 0.25s ease-in-out;
+		-moz-transition: max-height 0.25s ease-in-out, opacity 0.25s ease-in-out;
+		transition: max-height 0.25s ease-in-out, opacity 0.25s ease-in-out;
+		-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.06);
+		-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.06);
+		box-shadow: 0px 3px 5px rgba(0,0,0,0.06);
+		
+		@include mdBreakpoint(gtMd) {
+			left: 0;
+			top: 100%;
+			position: absolute;
+			width: 225px;
+		}
+		
+		li {
+			border-bottom: 1px solid #eee;
+			display: block;
+			margin: 0;
+			
+			&.current-menu-item > a,
+			&.current_page_item > a {
+				background: rgba(92,172,238,0.1);
+				
+				&:before {
+					color: $lightBlue;
+				}
+			}
+			
+			@include mdBreakpoint(gtMd) {
+				
+				&.menu-item-has-children:hover > a {
+					background: rgba(92,172,238,0.1);
+					text-decoration: underline;
+					
+					&:before {
+						color: $lightBlue;
+					}
+				}
+			
+			}
+			
+		}
+		
+		a {
+			color: $lightBlue;
+			display: block;
+			padding: 10px;
+			position: relative;
+			
+			@include mdBreakpoint(gtMd) {
+				padding-left: 30px;
+			}
+			
+			&:before {
+				color: #ccc;
+				content: "\f054";
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				margin-right: 15px;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-transition: inherit;
+				-moz-transition: inherit;
+				transition: inherit;
+				
+				@include mdBreakpoint(gtMd) {
+					font-size: 85%;
+					left: 15px;
+					position: absolute;
+					top: 13px;
+				}
+				
+			}
+			
+			&:hover {
+				background: rgba(92,172,238,0.1);
+				text-decoration: underline;
+				
+				&:before {
+					color: $lightBlue;
+				}
+				
+			}
+			
+		}
+		
+		.sub-menu {
+			background: rgba(92,172,238,0.1);
+			font-size: 90%;
+			left: 95%;
+			top: 5px;
+			
+			a {
+				color: rgba(0,0,0,0.5);
+				
+				&:hover {
+					color: $lightBlue;
+				}
+				
+			}
+			
+			@include mdBreakpoint(gtMd) {
+				background: $white;
+			}
+			
+			& + .sub-menu-toggle {
+				color: #bbb;
+				
+				&:hover {
+					color: $lightBlue;
+					opacity: 0.6;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.open-sub-menu {
+		
+		& > a {
+			background: $white;
+			color: $orange;	
+		}
+		
+		& > .sub-menu {
+			max-height: 2000px;
+			overflow: visible;
+			opacity: 1;
+		}
+	
+	}
+	
+	.menu > .open-sub-menu {
+		
+		& > a {
+			border-top-color: $lightBlue;
+		}
+	
+	}
+	
+	@include mdBreakpoint(gtMd) {
+		.menu-item-has-children:hover {
+			
+			& > a {
+				background: $white;
+				color: $orange;
+			}
+			
+			& > .sub-menu {
+				max-height: 2000px;
+				opacity: 1;
+				overflow: visible;
+			}
+		
+		}
+		
+		.menu > .menu-item-has-children:hover {
+			
+			& > a {
+				border-top-color: $lightBlue;
+			}
+		
+		}
+	}
+	
+}
+
+.sub-menu-toggle {
+	cursor: pointer;
+	font-size: 22px;
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+	line-height: 36px;
+	text-align: center;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	
+	&:hover {
+		color: rgba(255,255,255,0.6);
+	}
+	
+	.sub-menu .sub-menu + & {
+		top: 0;
+	}
+	
+	.open-sub-menu > & {
+		color: $lightBlue;
+		font-size: 26px;
+		opacity: 0.6;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		transform: rotate(180deg);
+		
+		&:before {
+			content: "\f00d";
+		}
+		
+	}
+	
+	@include mdBreakpoint(gtMd) {
+		display: none;
+	}
+	
+}
+
+.top-social{
+	a {
+		padding: 7px;
+		font-size: 20px; 
+		vertical-align: sub;
+	}
+	@media screen and (max-width: 733px){
+        display:none;
+	}
+} 
+
+.mobile-social {
+	@media screen and (min-width: 733px){
+        display:none;
+	}
+	@media screen and (max-width: 733px){
+        display:-webkit-inline-box;
+        a {
+    		padding: 13px;
+		}
 	}
 }

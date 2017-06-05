@@ -1,0 +1,208 @@
+#IPHero,
+#StopRobots,
+#OnlyHumanTraffic,
+#HowItWorks {
+	padding: 40px 20px;
+
+	@include mdBreakpoint(gtSm) {
+		padding: 80px 20px;
+	}
+
+	h1, h2 {
+		font-size: 32px;
+		@include mdBreakpoint(gtSm) {
+			font-size: 48px;
+		}
+	}
+}
+
+#IPHero {
+	padding: 100px 20px 40px;
+	border-bottom: 1px solid $greyShade;
+
+	@include mdBreakpoint(gtSm) {
+		padding: 180px 0 80px;
+	}
+
+	h1 {
+		text-align: center;
+
+		@include mdBreakpoint(gtSm) {
+			padding: 0 10%;
+		}
+	}
+
+	.ip-hero-img {
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 298px;
+		@include mdBreakpoint(gtSm) {
+			flex: 0 0 298px;
+			margin-bottom: 0;
+			order: 1;
+			padding: 20px;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.ip-hero-content {
+		display: inline-block;
+		width: auto;
+		line-height: 1.5;
+
+		@include mdBreakpoint(gtSm) {
+			flex: 2 0 0;
+			order: 2;
+			padding: 20px;
+		}
+	}
+}
+
+#StopRobots {
+	background: $greyTint;
+	border-bottom: 1px solid $greyShade;
+
+	.robot-image {
+		display: inline-block;
+		max-width: 315px;
+		
+		@include mdBreakpoint(gtSm) {
+			flex: 0 0 315px;
+		}
+		
+	}
+
+	.robot-content {
+		display: inline-block;
+
+		@include mdBreakpoint(gtSm) {
+			flex: 2 0 0;
+			padding-right: 60px;
+		}
+
+		p {
+			line-height: 1.5;
+		}
+	}
+}
+
+#OnlyHumanTraffic {
+	border-bottom: 1px solid $greyShade;
+
+	.inner-wrap {
+		margin-bottom: 20px;
+	}
+	
+	h2 {
+		text-align: center;
+
+		@include mdBreakpoint(gtSm) {
+			padding: 0 10%;
+		}
+	}
+
+	p {
+		line-height: 1.5;
+
+		@include mdBreakpoint(gtSm) {
+			text-align: center;
+		}
+	}
+
+	.row {
+		justify-content: center;
+	}
+	.buttons {
+		width: 100%;
+		@include mdBreakpoint(gtSm) {
+			width: auto;
+			padding: 40px;
+		}
+
+		.button {
+			width: 100%;
+
+			@include mdBreakpoint(gtSm) {
+				width: 350px;
+			}
+		}
+	}
+
+	.section-image {
+		max-width: 428px;
+		padding: 40px 0 0 0;
+		width: 100%;
+
+		img {
+			height: auto;
+			width: 100%;
+			display: block;
+		}
+
+		@include mdBreakpoint(gtSm) {
+			flex: 1 1 428px;
+			padding: 0;
+		}
+	}
+}
+
+#HowItWorks {
+	h2 {
+		text-align: center;
+	}
+
+	.steps {
+		text-align: center;
+	}
+
+	.num {
+		border: 4px solid $green;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		line-height: 60px;
+		font-size: 32px;
+		font-weight: 800;
+		font-family: $mainFont;
+		color: $green;
+		margin: 0 auto 20px;
+	}
+
+	.step {
+		display: inline-block;
+		padding: 20px 10px;
+	}
+
+	.section-actions {
+		.button {
+			width: 100%;
+			@include mdBreakpoint(gtSm) {
+				width: 350px;
+			}
+		}
+	}
+}
+
+/**
+ * Global Styles for IP Marketing
+ */
+.section-actions {
+	padding: 20px;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	max-width: 100%;
+	justify-content: center;
+
+	@include mdBreakpoint(gtSm) {
+		padding: 40px 0;
+	}
+}

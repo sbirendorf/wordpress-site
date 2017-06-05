@@ -1,0 +1,126 @@
+{
+    "key": "group_58d8f2b626a9a",
+    "title": "How It Works",
+    "fields": [
+        {
+            "key": "field_58d8f2b6297c7",
+            "label": "Section Title",
+            "name": "prospectnow_ip_marketing_how_it_works_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8fac9fd994",
+            "label": "Steps",
+            "name": "prospectnow_ip_marketing_how_it_works_steps",
+            "type": "repeater",
+            "instructions": "Steps of How it Works",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Step",
+            "sub_fields": [
+                {
+                    "key": "field_58d8fad9fd995",
+                    "label": "Description",
+                    "name": "prospectnow_ip_marketing_how_it_works_steps_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_58d8fb100b391",
+            "label": "Button Text",
+            "name": "prospectnow_ip_marketing_how_it_works_button_text",
+            "type": "text",
+            "instructions": "Green Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Begin Your Campaign Now",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8fb1c0b392",
+            "label": "Button URL",
+            "name": "prospectnow_ip_marketing_how_it_works_button_url",
+            "type": "page_link",
+            "instructions": "Green Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-ip-marketing.php"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "4TH SECTION ON IP MARKETING TEMPLATE",
+    "modified": 1490633423
+}

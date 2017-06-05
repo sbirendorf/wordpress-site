@@ -1,0 +1,139 @@
+.communityPost {
+	position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid $greyTint;
+    margin: 0 20px;
+	width: 100%;
+	float: left;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	.communityPostThumbnail {
+		overflow: hidden;
+	    border: 2px solid $greyMedium;
+	    position: relative;
+	    margin-bottom: 15px;
+	    margin-right: 0;
+	    width: 100%;
+
+		@include mdBreakpoint(gtXs) {
+			width: 180px;
+			height: 120px;
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.comments-link {
+			display: none;
+			position: absolute;
+			font-size: 12px;
+			bottom: 0;
+			left: 0;
+			padding: 5px;
+			background: rgba(255,255,255,0.7);
+			font-size: 12px;
+
+			@include mdBreakpoint(gtXs) {
+				display: block;
+			}
+		}
+	}
+
+	.communityTitle {
+
+		@include mdBreakpoint(gtXs) {
+			float: left;
+			width: 280px;
+			margin-right: 20px;
+		}
+
+		.entry-title {
+			font-family: $mainFont;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: normal;
+			margin: 0 0 10px;
+		}
+
+		h1,h2,h3,h4,h5, h6 {
+			margin: 0;
+			padding: 0;
+		}
+
+		h5 {
+			font-size: 14px;
+    		font-weight: 100;
+		}
+
+		h3 {
+			font-size: 14px;
+			color: $grey;
+			margin-top: 10px;
+		}
+
+		.date {
+			font-size: 12px;
+			font-style: italic;
+			color: $grey;
+			margin-top: 10px;
+		}
+	}
+
+	.communitySummary {
+		line-height: 24px;
+		color: $grey;
+		margin-top: 20px;
+
+		@include mdBreakpoint(gtXs) {
+			float: left;
+			width: 450px;
+			margin-top: 0;
+		}
+	}
+
+	.button {
+		display: block;
+		text-decoration: none !important;
+
+		@include mdBreakpoint(gtXs) {
+			float: right;
+			display: inline-block;
+			margin-top: 10px;
+		}
+	}
+}
+
+.pagination {
+
+	a  {
+		text-decoration: none;
+
+		span {
+			color: $pagination_color;
+		}
+
+		&:hover {
+			span {
+				color: $white;
+			}
+		}
+	}
+
+	span {
+		border: 0;
+		color: $grey;
+	}
+
+	.screen-reader-text {
+		display: none;
+	}
+}

@@ -18,7 +18,14 @@
     "node-sass": "^4.1.1"
   },
   "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-imagemin": "^3.1.1",
-    "gulp-livereload": "^3.8.1"
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://imakeinnernettes@bitbucket.org/typefasterjoel/pn-shared.git"
   }
 }

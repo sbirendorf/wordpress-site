@@ -18,6 +18,7 @@
 						<li><a href="#">Products</a></li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">Contact Us</a></li>
+						<!-- test -->
 					</ul>
 				</div>
 				<!-- .container -->
@@ -39,13 +40,24 @@
 			<section id="Hero">
 				<div class="container">
 					<h1>We Predict Properties Most Likely to Sell or Refinance</h1>
+					<!-- We're not going to use this until we go back to the new one.
 					<div class="role">
 						<h2>What best describes you?</h2>
 						<select name="rolePicker">
 							<option value="">Choose Your Role</option>
-							<option value="real-estate-agent">Real Estate Agent</option>
+							<option value="res-real-estate-agent">Residential Real Estate Agent</option>
+							<option value="com-real-estate-agent">Commercial Real Estate Agent</option>
+							<option value="res-lender">Residential Bank Lender</option>
+							<option value="com-lender">Commercial Bank Lender</option>
 						</select>
+						<ul class="role-switcher">
+							<li><a href="#">Residential Real Estate Agent</a></li>
+							<li><a href="#">Commercial Real Estate Agent</a></li>
+							<li><a href="#">Residential Bank Lender</a></li>
+							<li><a href="#">Commercial Bank Lender</a></li>
+						</ul>
 					</div>
+				`	-->
 					<!-- .role -->
 					<div class="search-properties">
 						<h3>Sign Up for a Free Trial</h3>
@@ -76,6 +88,16 @@
 								<input type="tel" id="user_telephone" name="user_telephone">
 							</div>
 							<!-- .field -->
+							<div class="field select">
+								<label for="user_role">Industry Role:</label>
+								<select name="rolePicker">
+									<option value="">Choose Your Role</option>
+									<option value="res-real-estate-agent">Residential Real Estate Agent</option>
+									<option value="com-real-estate-agent">Commercial Real Estate Agent</option>
+									<option value="res-lender">Residential Bank Lender</option>
+									<option value="com-lender">Commercial Bank Lender</option>
+								</select>
+							</div>
 							<div class="field double checkbox">
 								<label>
 									<input type="checkbox" name="terms" value="1">

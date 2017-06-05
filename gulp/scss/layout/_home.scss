@@ -1,162 +1,35 @@
 /**
  * Homepage Sections
  */
-#Hero {
-	padding: 110px 20px 40px;
-	background-image: url('../img/home/top-hero-banner-house-mobile.jpg');
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	background-size: cover;
-	color: #fff;
-
-	@include mdBreakpoint(sm) {
-		background-image: url('../img/home/top-hero-banner-ipad-p.jpg');
-	}
-
-	@include mdBreakpoint(gtSm) {
-		padding: 150px 0 80px;
-		background-image: url('../img/home/top-hero-banner-ipad-l.jpg');
-	}
-
-	@include mdBreakpoint(gtMd) {
-		padding: 180px 0 80px;
-		background-image: url('../img/home/top-hero-banner-desktop.jpg');
-	}
-
-	h1,
-	h2,
-	h3 {
-		color: #fff;
-	}
-
-	h1 {
-		font-size: 32px;
-
-		@include mdBreakpoint(gtXs) {
-			font-size: 48px;
-			text-align: center;
-		}
-
-	}
-
-	h3 {
-		font-size: 24px;
-		text-align: center;
-	}
-
-	.role {
-		background: rgba(255,255,255,0.8);
-		padding: 10px;
-		border-radius: 3px;
-		vertical-align: top;
-		max-width: 624px;
-		margin: 20px auto 0;
-
-		h2 {
-			color: $black;
-			text-align: center;
-			font-size: 24px;
-
-			@include mdBreakpoint(gtXs) {
-				display: inline-block;
-				margin-left: 10px;
-				margin-right: 20px;
-
-			}
-		}
-
-		select {
-			display: block;
-			width: 100%;
-			padding: 10px;
-			margin-top: 10px;
-			border: 1px solid $grey;
-			font-family: $mainFont;
-
-			@include mdBreakpoint(gtXs) {
-				display: inline-block;
-				width: 295px;
-			}
-		}
-	}
-
-	.search-properties {
-		padding: 20px;
-		position: relative;
-		background: $lightBlue;
-		margin-top: 20px;
-		border-radius: 3px;
-		box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-
-		&:after {
-			display: block;
-			content: '';
-			width: 0;
-			height: 0;
-			border-left: 10px solid transparent;
-			border-right: 10px solid transparent;
-			border-bottom: 10px solid $lightBlue;
-			position: absolute;
-			top: -10px;
-			margin-left: -5px;
-			left: 50%;
-		}
-
-		h3 {
-			text-align: center;
-		}
-	}
-}
 
 /**
  * Portal
  */
-#Portal {
-	padding: 40px 0;
-
-	h2 {
-		font-size: 32px;
-		text-align: center;
-		padding: 0 20px;
-
-		@include mdBreakpoint(gtXs) {
-			font-size: 48px;
-		}
-	}
-
-	@extend %clearfix;
-
-	@include mdBreakpoint(sm) {
-		padding: 40px 20px;
-	}
-
-	@include mdBreakpoint(gtSm) {
-		padding: 80px 20px;
-	}
-}
 
 .portal-section {
 	display: block;
-	margin-top: 20px;
+	margin-bottom: 40px;
 
-	@include mdBreakpoint(sm) {
-		float: right;
-		width: 48%;
-		max-width: 351px;
+	.video-dialog:hover {
+		cursor: pointer;
 	}
 
 	@include mdBreakpoint(gtSm) {
 		float: right;
-		width: 377px;
-		margin-right: 70px;
-
+		margin-bottom: 0;
+		width: 48%;
 	}
 
-	h3 {
+	@include mdBreakpoint(gtMd) {
+		width: 45%;
+	}
+
+	h2 {
 		color: $grey;
-		font-weight: 400;
+		font-weight: bold;
 		padding: 20px 0;
 		margin: 0 20px;
+		text-align: left;
 		font-size: 24px;
 		border-top: 1px solid $grey;
 
@@ -169,65 +42,24 @@
 
 	&#RealEstateAgent {
 
-		h3 {
+		h2 {
 			border-top: 0;
 			padding: 0 0 20px;
 		}
 
-		@include mdBreakpoint(sm) {
-			float: left;
-
-			.actions {
-				padding-top: 23px;
-			}
-		}
-
 		@include mdBreakpoint(gtSm) {
 			float: left;
-			margin-left: 70px;
-
-			.actions {
-				padding-top: 23px;
-			}
 		}
 	}
 
-	p {
-		line-height: 22px;
-		font-size: 14px;
-		padding: 0 20px;
-
-		@include mdBreakpoint(gtXs) {
-			padding: 0;
-		}
-	}
-
-	.img {
+	img {
+		height: auto;
+		display: block;
+		margin-bottom: 20px;
 		width: 100%;
-		height: 170px;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 50% 0;
-
-		&.real-estate {
-			background-image: url('../img/home/real-estate-image.jpg');
-
-			@include mdBreakpoint(sm) {
-				background-image: url('../img/home/real-estate-image-ip.jpg');
-			}
-		}
-
-		&.lender {
-			background-image: url('../img/home/lender-image.jpg');
-
-			@include mdBreakpoint(sm) {
-				background-image: url('../img/home/lender-image-ip.jpg');
-			}
-		}
 	}
 
 	.actions {
-		padding: 0 20px 20px;
 
 		.button {
 			width: 100%;
@@ -238,40 +70,10 @@
 }
 
 #DigitalMarketing {
-	padding: 40px 20px;
+	background: $lightGrey;
 	border-top: 1px solid $grey;
 	border-bottom: 1px solid $grey;
-	background: $lightGrey;
-
-	@extend %clearfix;
-
-	h2 {
-		font-size: 32px;
-		text-align: center;
-
-		@include mdBreakpoint(gtXs) {
-			font-size: 48px;
-		}
-	}
-
-	h3 {
-		font-weight: 300;
-		font-size: 18px;
-		color: $grey;
-		margin-top: 20px;
-
-		@include mdBreakpoint(sm) {
-			font-size: 20px;
-			text-align: center;
-			line-height: 30px;
-		}
-
-		@include mdBreakpoint(gtSm) {
-			font-size: 24px;
-			text-align: center;
-			line-height: 32px;
-		}
-	}
+	text-align: center;
 
 	.actions {
 
@@ -280,53 +82,32 @@
 			display: block;
 			margin: 20px 0;
 
-			@include mdBreakpoint(sm) {
+			@include mdBreakpoint(gtXs) {
 				float: right;
-				max-width: 350px;
-			}
-
-			@include mdBreakpoint(gtSm) {
-				float: right;
-				max-width: 453px;
-				margin-right: 80px;
+				max-width: 45%;
 			}
 		}
 
 		.button {
-			display: block;
-			text-align: center;
 
 			@include mdBreakpoint(gtXs) {
 				float: left;
-				width: 335px;
-				margin-top: 80px;
+				width: 45%;
+				margin: 11% 0 0 0;
 			}
 
-			@include mdBreakpoint(gtSm) {
-				margin-left: 80px;
-				margin-top: 115px
-			}
 		}
+
 	}
+
 }
 
 #UsingProspectNow {
-	padding: 40px 20px;
 	background: $black;
 	color: #fff;
 
-	@include mdBreakpoint(gtSm) {
-		padding: 80px 0;
-	}
-
-	h2 {
-		color: #fff;
-		font-size: 32px;
-		text-align: center;
-
-		@include mdBreakpoint(sm) {
-			font-size: 48px;
-		}
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
 	}
 
 	.logos {
@@ -414,6 +195,13 @@
 					bottom: 0;
 					right: 0;
 				}
+
+				img {
+					display: block;
+					height: auto;
+					width: 100%;
+				}
+
 			}
 
 			.testimony-text {
@@ -421,10 +209,14 @@
 
 				h4, h5 { color: #fff;}
 
-				.name { font-size: 20px; }
+				.name {
+					font-size: 20px;
+					margin: 10px 0;
+				}
 				.title {
 					font-size: 12px;
 					font-weight: 300;
+					margin: 0 0 10px 0;
 				}
 
 				p {
@@ -439,8 +231,6 @@
 		margin-top: 20px;
 
 		.button {
-			display: block;
-			text-align: center;
 			max-width: 350px;
 			margin: 0 auto;
 		}
@@ -448,20 +238,6 @@
 }
 
 #Blog {
-	padding: 40px 20px;
-
-	@include mdBreakpoint(gtSm) {
-		padding: 80px 0;
-	}
-
-	h2 {
-		font-size: 32px;
-		text-align: center;
-
-		@include mdBreakpoint(gtXs) {
-			font-size: 48px;
-		}
-	}
 
 	.blog {
 		position: relative;
@@ -470,7 +246,7 @@
 
 		@include mdBreakpoint(gtXs) {
 			display: inline-block;
-			max-width: 45%;
+			width: 45%;
 		}
 
 		@include mdBreakpoint(gtSm) {
@@ -534,4 +310,107 @@
 			}
 		}
 	}
+}
+
+
+.portal-image-wrap {
+	margin-bottom: 20px;
+	position: relative;
+
+	img {
+		display: block;
+		margin: 0;
+	}
+
+	span {
+		color: #fff;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: -16px;
+		padding: 8px 10px;
+		position: absolute;
+		top: 50%;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	#RealEstateAgent & {
+
+		span {
+			background: #F79000;
+			left: 20px;
+
+			&:after {
+				content: '';
+				border-top: 8px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 8px solid transparent;
+				border-left: 10px solid #F79000;
+				margin-top: -9px;
+				position: absolute;
+				right: -20px;
+				top: 50%;
+			}
+
+		}
+
+	}
+
+	#Lender & {
+
+		span {
+			background: #3CA429;
+			right: 20px;
+
+			&:before {
+				content: '';
+				border-top: 8px solid transparent;
+				border-right: 10px solid #3CA429;
+				border-bottom: 8px solid transparent;
+				border-left: 10px solid transparent;
+				margin-top: -9px;
+				position: absolute;
+				left: -20px;
+				top: 50%;
+			}
+
+		}
+
+	}
+
+}
+
+#Hero .simplified-form {
+	margin: auto;
+	max-width: 500px;
+	width: 100%;
+
+	@include mdBreakpoint(gt1024) {
+		max-width: 650px;
+
+		.field {
+			clear: none;
+			float: left;
+			width: 66%;
+
+			&:first-child {
+				margin-right: 20px;
+			}
+
+			&.actions {
+				width: 30%;
+
+				.button {
+					padding: 4px;
+				}
+			}
+
+		}
+
+	}
+
 }

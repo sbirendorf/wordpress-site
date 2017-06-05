@@ -28,6 +28,20 @@ gulp.task('styles', function() {
 		.pipe(livereload());
 });
 
+gulp.task('styles-wp', function() {
+	return gulp.src('gulp/scss/**/*.scss')
+		.pipe(plumber())
+		.pipe(prefix('last 2 versions', 'ie >= 9', 'and_chr >= 2.3'))
+		.pipe(sourcemaps.init())
+		.pipe(sass({
+			outputStyle: 'compressed',
+		}).on('error', sass.logError))
+		.pipe(sourcemaps.write('./maps'))
+		.pipe(gulp.dest('wordpress/wp-content/themes/pn/_assets/css'))
+		.pipe(livereload());
+});
+
+
 gulp.task('js', function() {
 	return gulp.src('gulp/js/**/*.js')
 		.pipe(plumber())
@@ -36,11 +50,27 @@ gulp.task('js', function() {
 		.pipe(livereload());
 });
 
+gulp.task('js-wp', function() {
+	return gulp.src('gulp/js/**/*.js')
+		.pipe(plumber())
+		.pipe(uglify())
+		.pipe(gulp.dest('wordpress/wp-content/themes/pn/_assets/js'))
+		.pipe(livereload());
+});
+
 gulp.task('img', function() {
 	return gulp.src('gulp/img/**/*.{jpg,jpeg,gif,png}')
 		.pipe(plumber())
 		.pipe(imagemin())
 		.pipe(gulp.dest('page/_assets/img'))
+		.pipe(livereload())
+});
+
+gulp.task('img-wp', function() {
+	return gulp.src('gulp/img/**/*.{jpg,jpeg,gif,png}')
+		.pipe(plumber())
+		.pipe(imagemin())
+		.pipe(gulp.dest('wordpress/wp-content/themes/pn/_assets/img'))
 		.pipe(livereload())
 });
 
@@ -74,4 +104,27 @@ gulp.task('watch', function() {
 		});
 });
 
+gulp.task('watch-wp', function() {
+	livereload.listen();
+
+	gulp.watch('gulp/scss/**/*.scss', ['styles-wp'])
+		.on('change', function(event) {
+	      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+	    });
+	gulp.watch('gulp/js/**/*.js', ['js-wp'])
+		.on('change', function(event) {
+		  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+		});
+	gulp.watch('gulp/img/**/*.{jpg,jpeg,gif,png}', ['img-wp'])
+		.on('change', function(event) {
+		  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+		});
+	gulp.watch('wordpress/**/*.php', ['reload']).on('change', changed)
+		.on('change', function(event) {
+		  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+		});
+});
+
+
 gulp.task('default', ['styles', 'js', 'img', 'watch']);
+gulp.task('wp', ['styles-wp', 'js-wp', 'img-wp', 'watch-wp']);

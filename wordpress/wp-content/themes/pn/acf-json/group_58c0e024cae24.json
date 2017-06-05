@@ -1,0 +1,112 @@
+{
+    "key": "group_58c0e024cae24",
+    "title": "IP Marketing",
+    "fields": [
+        {
+            "key": "field_58c0e024cd8ec",
+            "label": "Section Title",
+            "name": "prospectnow_ip_marketing_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0e024cd925",
+            "label": "IP Marketing Content",
+            "name": "prospectnow_ip_marketing_content",
+            "type": "wysiwyg",
+            "instructions": "Content of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58c0e024cd943",
+            "label": "IP Marketing Button Text",
+            "name": "prospectnow_ip_marketing_button_text",
+            "type": "text",
+            "instructions": "Orange Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0e06de0c38",
+            "label": "IP Marketing Button URL",
+            "name": "prospectnow_ip_marketing_button_url",
+            "type": "page_link",
+            "instructions": "Orange Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-home.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-home-simple.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "3RD SECTION ON HOMEPAGE TEMPLATE",
+    "modified": 1493541059
+}

@@ -1,0 +1,56 @@
+.pn-modal {
+
+	@media screen and (max-width: 420px){
+	    margin-top: 20%;
+		height: 65%;
+	}
+	md-toolbar {
+		background: $lightBlue;
+
+		h2 {
+			color: $white;
+			font-weight: bold;
+		}
+	}
+
+	.field {
+
+		&.checkbox {
+			label {
+				color: $grey;
+			}
+		}
+	}
+
+	md-dialog-actions {
+		border-top: 1px solid #d7d7d7;
+		display: -webkit-inline-box;
+		overflow:auto;
+	}
+
+	.md-warn {
+		margin-right: 10px;
+		font-family: $mainFont;
+	}
+
+	.md-button {
+
+		&.orange {
+			background: $orange !important;
+
+			&:hover {
+				background: $lightOrange !important;
+			}
+		}
+	}
+
+	.md-link {
+
+		&.link {
+			color: $grey;
+			font-family: $mainFont;
+		}
+	}
+	
+
+}

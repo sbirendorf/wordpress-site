@@ -1,0 +1,708 @@
+{
+    "key": "group_58d8d4db2fbb0",
+    "title": "Qualified Leads",
+    "fields": [
+        {
+            "key": "field_58d8d519aa136",
+            "label": "Section Title",
+            "name": "prospectnow_broker_qualified_leads_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d54eaa137",
+            "label": "Content",
+            "name": "prospectnow_broker_qualified_leads_section_content",
+            "type": "wysiwyg",
+            "instructions": "Content of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58d8d57eaa139",
+            "label": "Form Fields",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58d8d5a4aa13b",
+            "label": "Enter Zip Code Label",
+            "name": "prospectnow_broker_qualified_leads_form_zip_code_label",
+            "type": "text",
+            "instructions": "Label for form field in the territory report \/ calculator",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Enter Zip Code",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d5b2aa13c",
+            "label": "Choose State Select Label",
+            "name": "prospectnow_broker_qualified_leads_form_choose_state_select_label",
+            "type": "text",
+            "instructions": "Placeholder text that displays in Select prior to focus",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "State",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d5cdaa13d",
+            "label": "Choose County Label",
+            "name": "prospectnow_broker_qualified_leads_form_choose_county_label",
+            "type": "text",
+            "instructions": "Label text above Input",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Choose County:",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d5dfaa13e",
+            "label": "Choose County Select Label",
+            "name": "prospectnow_broker_qualified_leads_form_choose_county_select_label",
+            "type": "text",
+            "instructions": "Placeholder text that displays in Select prior to focus",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "County",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d5f1aa13f",
+            "label": "Property Type Label",
+            "name": "prospectnow_broker_qualified_leads_form_property_type_label",
+            "type": "text",
+            "instructions": "Label Text above Input",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Property type you service:",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d5fcaa140",
+            "label": "Property Type Select Label",
+            "name": "prospectnow_broker_qualified_leads_form_property_type_select_label",
+            "type": "text",
+            "instructions": "Placeholder text that displays in Select prior to focus",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Property Type",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_590ab2ab5eed1",
+            "label": "Slider Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "Adjust the slider settings here.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58d8da06882f1",
+            "label": "Annual Marketing Speed Label",
+            "name": "prospectnow_broker_qualified_leads_form_annual_marketing_speed_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "What's your annual marketing spend?",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d608aa141",
+            "label": "Annual Marketing Spend Slider (MIN)",
+            "name": "prospectnow_broker_qualified_leads_form_annual_marketing_speed_slider_min",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8d633aa142",
+            "label": "Annual Marketing Spend Slider (MAX)",
+            "name": "prospectnow_broker_qualified_leads_form_annual_marketing_speed_slider_max",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab24eb0ba2",
+            "label": "Annual Marketing Spend Slider (Default)",
+            "name": "prospectnow_broker_qualified_leads_form_annual_marketing_speed_slider_default",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab51ca24aa",
+            "label": "Annual Marketing Spend Slider (Step)",
+            "name": "prospectnow_broker_qualified_leads_form_annual_marketing_speed_slider_step",
+            "type": "number",
+            "instructions": "By how much the marketing spend should be spent?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8da4c882f2",
+            "label": "How Many Deals Label",
+            "name": "prospectnow_broker_qualified_leads_form_how_many_deals_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "How many deals did you sell last year?",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d646aa144",
+            "label": "How Many Deals (MIN)",
+            "name": "prospectnow_broker_qualified_leads_form_how_many_deals_min",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8d65baa145",
+            "label": "How Many Deals (MAX)",
+            "name": "prospectnow_broker_qualified_leads_form_how_many_deals_max",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab25eb0ba3",
+            "label": "How Many Deals (Default)",
+            "name": "prospectnow_broker_qualified_leads_form_how_many_deals_default",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab4d9a24a9",
+            "label": "How Many Deals (Step)",
+            "name": "prospectnow_broker_qualified_leads_form_how_many_deals_step",
+            "type": "number",
+            "instructions": "By how much should the slider increment by?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8da6f882f3",
+            "label": "Average Deal Amount Label",
+            "name": "prospectnow_broker_qualified_leads_form_average_deal_amount_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "What's the average deal amount?",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d664aa146",
+            "label": "Average Deal Amount (MIN)",
+            "name": "prospectnow_broker_qualified_leads_form_average_deal_amount_min",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8d66eaa147",
+            "label": "Average Deal Amount (MAX)",
+            "name": "prospectnow_broker_qualified_leads_form_average_deal_amount_max",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab270b0ba4",
+            "label": "Average Deal Amount (Default)",
+            "name": "prospectnow_broker_qualified_leads_form_average_deal_amount_default",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_590ab414b949e",
+            "label": "Average Deal Amount (Step)",
+            "name": "prospectnow_broker_qualified_leads_form_average_deal_amount_step",
+            "type": "number",
+            "instructions": "By how much should the slider increment when being used?(default: increments of 1)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_58d8d6bf076f3",
+            "label": "Results",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58d8d6d3076f4",
+            "label": "Title",
+            "name": "prospectnow_broker_qualified_leads_results_title",
+            "type": "text",
+            "instructions": "Displays about the Results Table Value",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Potential Additional Commission",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d6e3076f5",
+            "label": "Table Heading 1",
+            "name": "prospectnow_broker_qualified_leads_results_table_heading_1",
+            "type": "text",
+            "instructions": "TH of the 2nd Column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Status Quo",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d704076f6",
+            "label": "Table Heading 2",
+            "name": "prospectnow_broker_qualified_leads_results_table_heading_2",
+            "type": "text",
+            "instructions": "TH of the 3rd Column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Prospect Now",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d70b076f7",
+            "label": "Table Footer Left",
+            "name": "prospectnow_broker_qualified_leads_results_table_footer_left",
+            "type": "textarea",
+            "instructions": "Text that displays below the Table, on the left side",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "** Assumptions: 3% sell side fee at an 80\/20 split",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58d8d721076f8",
+            "label": "Table Footer Right",
+            "name": "prospectnow_broker_qualified_leads_results_table_footer_right",
+            "type": "textarea",
+            "instructions": "Text that displays below the Table, on the right side",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "* Historical Measured Sales Turnover Over 24 months for ProspectNow Likely Sellers Compared to County Average Turnover",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58d8d73b076f9",
+            "label": "Left Button Text",
+            "name": "prospectnow_broker_qualified_leads_results_left_button_text",
+            "type": "text",
+            "instructions": "Button text for the Left Button (orange)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Start My Free Trial",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d746076fa",
+            "label": "Left Button URL",
+            "name": "prospectnow_broker_qualified_leads_results_left_button_url",
+            "type": "page_link",
+            "instructions": "Button URL for the Left Button (orange)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_58d8d758076fb",
+            "label": "Right Button Text",
+            "name": "prospectnow_broker_qualified_leads_results_right_button_text",
+            "type": "text",
+            "instructions": "Button text for the Right Button (white with orange outline)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "View Full Territory Report",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8d77a076fc",
+            "label": "Right Button URL",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "This button URL is dynamic based off Report",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-broker.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "2ND SECTION ON BROKER TEMPLATE",
+    "modified": 1493874736
+}

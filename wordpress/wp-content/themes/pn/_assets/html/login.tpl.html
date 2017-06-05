@@ -1,0 +1,40 @@
+<md-dialog aria-label="Log In to ProspectNow (Dialog)" class="pn-modal" flex="40">
+	<form id="login_form" name="login_form" class="search-properties" method="POST" action="#">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Log In</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()" aria-label="Close Dialog">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <div id="login_error"></div>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+		  <div class="field">
+			<label style="top: 14px;">Email Address:</label>
+			<input value="" type="text" name="popupemail" id="popupemail" class="wholeInput" onkeydown="if (event.keyCode == 13){submitLoginForm();}">
+		  </div>
+		  <div class="field">
+			<label style="top: 14px;">Password:</label>
+			<input value="" type="password" name="popuppassword" id="popuppassword" class="wholeInput" onkeydown="if (event.keyCode == 13){submitLoginForm();}">
+		  </div>
+		  <div class="field checkbox">
+			  <label>
+			  	<input type="checkbox" id="popupremember" aria-label="Remember Me Checkbox" name="rem" ng-true-value="'yes'" ng-false-value="false">
+		   			Remember Me
+				</label>
+			</div>
+	  </div>
+
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button href="/oldindex.php?page=forgotPass" class="md-link link">Forgot Password?</md-button>
+      <span flex></span>
+      <md-button class="md-link md-warn link" ng-click="cancel()">Cancel</md-button>
+      <md-button type="button" class="md-raised md-primary orange" id="popuplogin" onclick="submitLoginForm()">Login</md-button>
+    </md-dialog-actions>
+	</form>
+</md-dialog>

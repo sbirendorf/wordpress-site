@@ -1,0 +1,60 @@
+<?php
+/**
+ * Template part for displaying Product - Page Hero
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package prospectnow
+ */
+
+$desktop_img = get_field('prospectnow_page_hero_image_desktop');
+$mobile_img = get_field('prospectnow_page_hero_image_mobile');
+$link = get_field('prospectnow_page_hero_image_link');
+$link_title = get_field('prospectnow_page_hero_image_link_title');	
+?>
+
+<section id="Hero">
+	<div class="container">
+		
+		<div class="inner-wrap">
+			
+			<?php if ( get_field('prospectnow_page_hero_title') ) : ?>
+			<h1><?php the_field('prospectnow_page_hero_title'); ?></h1>
+			<?php endif; ?>
+			
+			<?php if ( get_field('prospectnow_page_hero_content') ) : ?>
+			<?php the_field('prospectnow_page_hero_content'); ?>
+			<?php endif; ?>
+			
+			<?php 
+			$desktop_size = 'Medium_large';
+			if( $desktop_img ) : ?>
+			<div class="shadow-box desktop">
+				<?php if ( $link ) : ?>
+				<a href="<?php echo $link; ?>" title="<?php echo $link_title; ?>">
+				<?php endif; ?>
+				<?php echo wp_get_attachment_image( $desktop_img, $desktop_size ); ?>
+				<?php if ( $link ) : ?>
+				</a>
+				<?php endif; ?>
+			</div>
+			<?php endif; ?>
+			
+			<?php 
+			$mobile_size = 'product-mobile-hero';
+			if( $mobile_img ) : ?>
+			<div class="shadow-box mobile">
+				<?php if ( $link ) : ?>
+				<a href="<?php echo $link; ?>" title="<?php echo $link_title; ?>">
+				<?php endif; ?>
+				<?php echo wp_get_attachment_image( $mobile_img, $mobile_size ); ?>
+				<?php if ( $link ) : ?>
+				</a>
+				<?php endif; ?>
+			</div>
+			<?php endif; ?>
+		
+		</div>
+		
+	</div>
+</section>

@@ -1,0 +1,333 @@
+{
+    "key": "group_58c0de12b908a",
+    "title": "Portal",
+    "fields": [
+        {
+            "key": "field_58c0de487b69c",
+            "label": "Section Title",
+            "name": "prospectnow_portal_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d93ae00dd0e",
+            "label": "Real Estate Agents Image",
+            "name": "prospectnow_portal_real_estate_agents_image",
+            "type": "image",
+            "instructions": "Real Estate Agents Column Image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "home-options",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58d93af60dd0f",
+            "label": "Lenders Image",
+            "name": "prospectnow_portal_lenders_image",
+            "type": "image",
+            "instructions": "Lenders Column Image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "home-options",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58d93c7c647d3",
+            "label": "Image Caption",
+            "name": "prospectnow_portal_real_estate_agents_image_caption",
+            "type": "text",
+            "instructions": "Text that displays in the Orange Overlay",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d93c8c647d4",
+            "label": "Image Caption",
+            "name": "prospectnow_portal_lenders_image_caption",
+            "type": "text",
+            "instructions": "Text that displays in the Green Overlay",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0de547b69d",
+            "label": "Real Estate Agents Title",
+            "name": "prospectnow_portal_real_estate_agents_title",
+            "type": "text",
+            "instructions": "Column Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0de7e7b69e",
+            "label": "Lenders Title",
+            "name": "prospectnow_portal_lenders_title",
+            "type": "text",
+            "instructions": "Column Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5906cc92b2b81",
+            "label": "Actions for Portal Image (Real Estate Agents)",
+            "name": "prospectnow_portal_real_estate_agents_extra",
+            "type": "text",
+            "instructions": "Insert here video link to be loaded when the user clicks on the image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5906cd07b2b83",
+            "label": "Actions for Portal Image (Lenders)",
+            "name": "prospectnow_portal_lenders_extra",
+            "type": "text",
+            "instructions": "Insert here video link to be loaded when the user clicks on the image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0dea17b6a0",
+            "label": "Real Estate Content",
+            "name": "prospectnow_portal_real_estate_content",
+            "type": "wysiwyg",
+            "instructions": "Description Content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58c0ded57b6a2",
+            "label": "Lenders Content",
+            "name": "prospectnow_portal_lenders_content",
+            "type": "wysiwyg",
+            "instructions": "Description Content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58c0dee77b6a3",
+            "label": "Real Estate Agents Button Text",
+            "name": "prospectnow_portal_real_estate_agents_button_text",
+            "type": "text",
+            "instructions": "Orange Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0df257b6a4",
+            "label": "Real Estate Agents Button URL",
+            "name": "prospectnow_portal_real_estate_agents_button_url",
+            "type": "page_link",
+            "instructions": "Orange Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_58c0df2d7b6a5",
+            "label": "Lenders Button Text",
+            "name": "prospectnow_portal_lenders_button_text",
+            "type": "text",
+            "instructions": "Green Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58c0df3b7b6a6",
+            "label": "Lenders Button URL",
+            "name": "prospectnow_portal_lenders_button_url",
+            "type": "page_link",
+            "instructions": "Green Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-home.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-home-simple.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "2ND SECTION ON HOMEPAGE TEMPLATE",
+    "modified": 1493619187
+}

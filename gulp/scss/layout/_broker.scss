@@ -1,0 +1,392 @@
+/**
+ * Broker
+ */
+#Hero {
+	&.broker-lender-landing {
+		min-height: 494px;
+		background-image:url('../img/landings/broker/broker-mobile.jpg');
+
+
+		@include mdBreakpoint(sm) {
+			min-height: 557px;
+			background-image:url('../img/landings/broker/broker-tablet-p.jpg');
+		}
+
+		@include mdBreakpoint(gtSm) {
+			min-height: 557px;
+			background-image:url('../img/landings/broker/broker-tablet-l.jpg');
+		}
+
+		@include mdBreakpoint(gtMd) {
+			min-height: 557px;
+			background-image:url('../img/landings/broker/broker-desktop.jpg');
+		}
+
+		h1, h2, h3, h4, h5 {
+			color: $black;
+			margin-bottom: 10px;
+			padding-right: 10%;
+
+			@include mdBreakpoint(sm) {
+				margin-bottom: 20px;
+				padding-right: 0;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				padding-right: 40%;
+				margin-bottom: 20px;
+			}
+
+			@include mdBreakpoint(gtMd) {
+				padding-right: 40%;
+			}
+		}
+
+		h2 {
+			@include mdBreakpoint(sm) {
+				padding-right: 50%;
+			}
+		}
+
+		h1 {
+
+			@include mdBreakpoint(sm) {
+				margin-top: 60px;
+
+			}
+
+			@include mdBreakpoint(gtSm) {
+
+			}
+
+			@include mdBreakpoint(gtMd) {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+#QualifiedLeads {
+	padding: 40px 0;
+
+	@extend %clearfix;
+
+	@include mdBreakpoint(sm) {
+		padding: 40px 20px;
+	}
+
+	@include mdBreakpoint(gtSm) {
+		padding: 80px 20px;
+	}
+}
+
+.inner-wrap {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 20px;
+	text-align: center;
+
+	&:last-child,
+	&:only-child {
+		margin-bottom: 0;
+	}
+	
+	& + .section-title {
+		margin-top: 60px;
+	}
+
+}
+
+.page-section.reports {
+
+	.entry-content {
+
+		@include mdBreakpoint(gtXs) {
+			padding-top: 40px;
+			padding-right: 3%;
+		}
+
+	}
+
+}
+
+.commissions-calculator {
+	text-align: center;
+}
+
+.form-fields {
+	overflow: hidden;
+	margin-bottom: -30px;
+	padding: 0 20px;
+
+	@include mdBreakpoint(gtXs) {
+		padding: 0;
+	}
+
+	.row {
+
+		@include mdBreakpoint(gtSm) {
+			@include flexbox();
+			align-items: flex-end;
+		}
+
+		.commissions-calculator & {
+			padding-bottom: 0;
+		}
+
+	}
+
+	label {
+		color: $black;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0 0 10px 0;
+		text-align: left;
+	}
+
+	select {
+		width: 100%;
+	}
+
+	.col {
+		padding: 0 10px 30px 10px;
+		vertical-align: bottom;
+
+		@include mdBreakpoint(gtSm) {
+			@include flex(1);
+			padding-bottom: 0;
+		}
+
+	}
+
+	.col.select.small {
+		float: left;
+		width: 50%;
+
+		@include mdBreakpoint(gtSm) {
+			float: none;
+			width: auto;
+		}
+
+	}
+
+	.col.select.large {
+		clear: both;
+		width: 100%;
+
+		@include mdBreakpoint(gtSm) {
+			clear: none;
+			width: auto;
+		}
+
+	}
+
+	.col.slider {
+		clear: both;
+		width: 100%;
+
+		@include mdBreakpoint(gtSm) {
+			clear: none;
+			width: auto;
+		}
+
+	}
+
+	md-slider-container md-input-container input[type=number] {
+		border: 1px solid #222;
+		height: 40px;
+		margin-top: -10px;
+		padding-right: 0;
+		padding-left: 14px;
+		text-align: center;
+	}
+
+	p {
+		margin: 0;
+		padding: 10px;
+	}
+
+	md-select.md-default-theme .md-select-value.md-select-placeholder,
+	md-select .md-select-value.md-select-placeholder {
+		border-bottom-color: $black;
+		color: $black;
+		text-align: left;
+	}
+
+}
+
+.lead-calculator-results {
+	background: $lightBlue;
+	color: $white;
+	margin: 60px auto 0;
+
+	@include mdBreakpoint(gtSm) {
+		margin-top: 80px;
+	}
+
+	@include mdBreakpoint(gtXs) {
+		margin-left: -20px;
+		margin-right: -20px;
+		width: auto;
+	}
+
+	@include mdBreakpoint(gtSm) {
+		display: table;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+
+	.col {
+		@include mdBreakpoint(gtSm) {
+			display: table-cell;
+			height: 100%;
+		}
+		&.first {
+			@include mdBreakpoint(gtSm) {
+				width: 40%;
+			}
+			@include mdBreakpoint(gtSm) {
+				width: auto;
+			}
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	table {
+		height: 100%;
+
+		tbody tr:last-child td {
+		    border-bottom: none;
+		}
+
+	}
+
+	.amount {
+		font-size: 60px;
+		display: block;
+		margin: 0;
+		font-weight: bold;
+	}
+
+	.first {
+		padding: 40px 20px;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+
+		@include mdBreakpoint(gtSm) {
+			padding: 60px 20px;
+		}
+
+		&:before {
+			border-width: 0 14px 12px 14px;
+			border-style: none solid solid solid;
+			border-color: transparent transparent $lightBlue transparent;
+			content: '';
+			display: block;
+			height: 12px;
+			left: 50%;
+			margin: 0 0 0 -14px;
+			position: absolute;
+			top: -12px;
+			width: 0;
+		}
+
+	}
+
+}
+
+html body {
+
+	md-slider {
+		text-align: left;
+
+		.md-thumb {
+			background: $darkerBlue;
+			top: 15px;
+		}
+
+	}
+
+	.md-track-container {
+		height: 4px;
+	}
+
+	.md-track-ticks {
+		display: none;
+	}
+
+	md-slider.md-default-theme .md-track,
+	md-slider .md-track {
+	    background-color: $table-bg;
+	}
+
+	md-slider.md-default-theme.md-primary .md-track.md-track-fill,
+	md-slider.md-primary .md-track.md-track-fill{
+		background: $darkerBlue;
+	}
+
+	.md-default-theme.md-min[md-discrete] .md-thumb:after,
+	md-slider.md-min[md-discrete] .md-thumb:after,
+	md-slider.md-default-theme.md-primary .md-thumb:after,
+	md-slider.md-primary .md-thumb:after {
+		background: $darkerBlue;
+		border-color: $darkerBlue;
+	}
+
+	md-slider.md-default-theme.md-primary .md-sign,
+	md-slider.md-primary .md-sign {
+		background: $darkerBlue;
+
+		&:after {
+			border-top-color: $darkerBlue;
+		}
+
+	}
+
+}
+
+.three-columns {
+
+	h2 {
+		font-weight: bold;
+		color: #222;
+		text-align: center;
+	}
+
+	img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.flex {
+		padding: 0 0 20px 0;
+
+		@include mdBreakpoint(gtXs) {
+			padding: 0 10px;
+		}
+
+		@include mdBreakpoint(gtSm) {
+			padding: 0 20px;
+		}
+
+	}
+
+	.actions {
+		margin-top: 40px;
+
+		.button {
+			display: inline-block;
+		}
+
+	}
+
+}

@@ -12,6 +12,9 @@
 @import 'tools/mixins';
 @import 'tools/fonts';
 @import 'global';
+@import 'components/modal';
+@import 'components/tabs';
+@import 'components/forms';
 
 /**
  * Layouts
@@ -19,4 +22,20 @@
 @import 'layout/navigation';
 @import 'layout/topBar';
 @import 'layout/home';
+@import 'layout/page';
+@import 'layout/blog';
+
+/**
+ * Landing Pages
+ */
+@import 'layout/broker';
+@import 'layout/ip-marketing';
+@import 'layout/about';
+
+/**
+ * Footer / Bottom Styles
+ */
 @import 'layout/footer';
+
+
+

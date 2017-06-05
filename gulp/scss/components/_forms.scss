@@ -1,0 +1,420 @@
+/**
+ * Forms
+ */
+.field {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	padding: 10px 0;
+
+	.note {
+		text-align: center;
+		padding: 5px 0;
+		font-size: 12px;
+	}
+
+	&.double:nth-child(even) + .field {
+		clear: both;
+	}
+	/*
+	md-input-container {
+		margin: 10px;
+
+		&.md-input-invalid {
+
+			label {
+				color: $red;
+			}
+
+			.md-input {
+				border-color: $red;
+			}
+		}
+
+		&.md-input-has-value {
+			md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value label,
+			md-input-container:not(.md-input-invalid).md-input-has-value label {
+				color: #fff;
+			}
+		}
+
+		&.md-input-focused {
+
+			.md-input {
+				border-color: #fff;
+			}
+
+			.md-text {
+				color: #fff;
+			}
+
+			.md-placeholder,
+			label {
+				color: #fff;
+			}
+
+			md-select {
+				border-color: #fff;
+				color: #fff;
+
+				&.md-default-theme .md-select-value.md-select-placeholder,
+				.md-select-value.md-select-placeholder {
+					color: #fff;
+					font-family: $mainFont;
+				}
+
+				&.md-default-theme .md-select-value,
+				.md-select-value {
+					border-color: #fff;
+				}
+
+				&.md-default-theme .md-select-icon,
+				.md-select-icon {
+					color: #fff;
+				}
+			}
+		}
+
+		&:not(.md-input-focused):not(.md-input-invalid) md-select.md-default-theme .md-select-value span:first-child:after,
+		&:not(.md-input-focused):not(.md-input-invalid) md-select .md-select-value span:first-child:after {
+			color: #fff;
+		}
+
+		&.md-default-theme:not(.md-input-focused):not(.md-input-invalid) label.md-required:after,
+		&:not(.md-input-focused):not(.md-input-invalid) label.md-required:after {
+			color: #fff;
+		}
+
+		.md-input {
+			border: 0;
+			border-radius: 3px;
+			padding: 0;
+			background: #fff;
+		}
+
+		.md-placeholder {
+			color: $grey;
+		}
+
+		label {
+			color: $grey;
+			padding: 0 30px;
+			font-family: $mainFont;
+
+			&.md-required {
+				&:after {
+						color: #fff;
+				}
+			}
+		}
+	}
+
+	md-checkbox {
+
+		.md-container {
+			top: 0;
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+		}
+
+		&.md-checked {
+			.md-icon {
+				background: $orange;
+			}
+		}
+		.md-label {
+			color: #fff;
+			font-family: $mainFont;
+			vertical-align: top;
+
+			a {
+				color: $darkerBlue;
+			}
+		}
+
+		&.md-default-theme:not(.md-checked) .md-icon,
+		&:not(.md-checked) .md-icon {
+			border-color: #fff;
+		}
+
+	}
+	*/
+	&.double {
+
+		@include mdBreakpoint(gtSm) {
+			float: left;
+			width: 49%;
+
+			&:nth-child(even) {
+				float: right;
+			}
+
+		}
+
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		display: block;
+		padding: 15px 10px 10px;
+		border-radius: 5px;
+		border: 1px solid $grey;
+
+	}
+
+	label {
+		color: $grey;
+		font-family: $mainFont;
+		display: block;
+		left: 10px;
+		line-height: 1;
+		opacity: 1;
+		position: absolute;
+		top: 25px;
+		z-index: 1;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+
+		&.focused {
+			font-size: 10px;
+			top: 15px;
+		}
+
+	}
+
+	&.checkbox {
+		padding: 0 10px;
+		margin: 10px 0;
+
+		input {
+			display: block;
+			position: absolute;
+			width: auto;
+			left: 0;
+			top: 0;
+
+		}
+		label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 25px;
+			padding-right: 15px;
+			color: #fff;
+			top: auto;
+			left: auto;
+
+
+			a {
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&.actions {
+		clear: both;
+		display: block;
+
+		button {
+			display: block;
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+
+	&.select {
+		label {
+			position: static;
+			display: block;
+			color: $black;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		select {
+			display: block;
+			width: 100%;
+			font-family: $mainFont;
+		}
+	}
+}
+
+/**
+ * Select Dropdown of Material Design
+ */
+md-select {
+	border-color: #fff;
+	font-family: $mainFont;
+	color: #fff;
+
+	&.md-default-theme .md-select-value.md-select-placeholder,
+	.md-select-value.md-select-placeholder {
+		color: #fff;
+		font-family: $mainFont;
+	}
+
+	&.md-default-theme .md-select-value,
+	.md-select-value {
+		border-color: #fff;
+	}
+
+	&.md-default-theme .md-select-icon,
+	.md-select-icon {
+		color: #fff;
+	}
+}
+
+md-select.md-default-theme.ng-invalid.ng-touched .md-select-value,
+md-select.ng-invalid.ng-touched .md-select-value {
+	color: $red !important;
+	border-color: $red !important;
+}
+
+md-input-container md-select.md-default-theme .md-select-value span:first-child:after,
+md-input-container md-select .md-select-value span:first-child:after {
+	color: $red;
+}
+
+md-option .md-text {
+	font-family: $mainFont;
+}
+
+.selectdemoBasicUsage md-input-container {
+	margin-right: 10px;
+}
+
+form.contact-form {
+	background: $white;
+	padding: 30px;
+
+	.field md-input-container {
+
+		label,
+		input,
+		textarea,
+		md-select,
+		md-select.md-default-theme .md-select-value.md-select-placeholder,
+		md-select .md-select-value.md-select-placeholder {
+			color: $black;
+		}
+
+		input,
+		textarea,
+		md-select,
+		md-select.md-default-theme .md-select-value.md-select-placeholder,
+		md-select .md-select-value.md-select-placeholder {
+			border-color: $black;
+		}
+
+	}
+
+	.field.spacer {
+		margin-top: 20px;
+	}
+
+}
+
+.page-wrapper .form-wrap {
+	background: $darkBlue;
+	color: $white;
+	padding: 15px;
+
+	@include mdBreakpoint(gtSm) {
+		padding: 30px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
+
+	a,
+	p a,
+	div,
+	.checkbox label {
+		color: $white;
+	}
+
+	a {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 1;
+		margin: 0;
+
+		a {
+			display: block;
+		}
+
+	}
+
+}
+
+.sliderControllers {
+	.slider {
+		md-input-container {
+			.md-input {
+				border: 1px solid $greyMedium;
+				border-width: 1px;
+				border-radius: 3px;
+				text-align: center;
+			}
+		}
+
+		.value {
+			display: block;
+			font-weight: bold;
+			font-family: $mainFont;
+			font-size: 24px;
+			color: $darkerBlue;
+		}
+	}
+}
+
+
+.custom-select {
+	background: $white;
+	border: 1px solid $grey;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	&:before {
+		color: $darkBlue;
+		content: "\f078";
+		display: inline-block;
+		font: normal normal normal 16px/1 FontAwesome;
+		font-size: inherit;
+		opacity: 0.6;
+		position: absolute;
+		right: 15px;
+		text-rendering: auto;
+		top: 12px;
+		z-index: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	
+	select {
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: block;
+		padding: 15px 10px 10px;
+		position: relative;
+		z-index: 1;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+}

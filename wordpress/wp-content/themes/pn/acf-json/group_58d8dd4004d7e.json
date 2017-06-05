@@ -1,0 +1,103 @@
+{
+    "key": "group_58d8dd4004d7e",
+    "title": "Reports",
+    "fields": [
+        {
+            "key": "field_58d8dd4013d15",
+            "label": "Section Title",
+            "name": "prospectnow_broker_reports_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8dd4013d25",
+            "label": "Content",
+            "name": "prospectnow_broker_reports_content",
+            "type": "wysiwyg",
+            "instructions": "Content of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58d8dd8596866",
+            "label": "Table Header 1",
+            "name": "prospectnow_broker_reports_table_header_1",
+            "type": "text",
+            "instructions": "TH of First Data Column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "All Properties",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8dd9196867",
+            "label": "Table Header 2",
+            "name": "prospectnow_broker_reports_table_header_2",
+            "type": "text",
+            "instructions": "TH of Last Data Column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Predicted",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-broker.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "3RD SECTION ON BROKER TEMPLATE",
+    "modified": 1490633051
+}

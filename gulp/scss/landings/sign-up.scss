@@ -1,0 +1,400 @@
+/*
+	Import variables and tools
+ */
+@import '../var';
+@import '../tools/mixins';
+
+#Hero {
+	&.sign-up {
+		background-image: url('../../img/landings/signup/mobile.jpg');
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		@include mdBreakpoint(sm) {
+			background-image: url('../../img/landings/signup/ipad-portrait.jpg');
+		}
+
+		@include mdBreakpoint(gtSm) {
+			background-image: url('../../img/landings/signup/ipad-landscape.jpg');
+		}
+
+		@include mdBreakpoint(gtMd) {
+			background-image: url('../../img/landings/signup/desktop.jpg');
+		}
+		
+		.layout-column>.flex {
+			min-height: inherit;
+		}
+		
+		.hero-content {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 580px;
+			
+			@include mdBreakpoint(gtSm) {
+				position: relative;
+				text-align: left;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				transform: translateY(-50%);
+				
+				h1, h2, h3, h4, h5, h6, p {
+					text-align: left;
+				}
+			
+			}
+			
+			h1 {
+				@include mdBreakpoint(gtXs) {
+					font-size: 46px;
+				}
+			}
+			
+			h2 {
+				@include mdBreakpoint(gtXs) {
+					font-size: 28px;
+				}
+			}
+			
+		}
+		
+		.context {
+
+			@include mdBreakpoint(gtXs) {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 20px;
+				width: 50%;
+			}
+
+			@include mdBreakpoint(gtSm) {
+				width: 55%;
+			}
+		}
+
+		.search-properties {
+			background: rgba(255,255,255,0.9);
+			color: $black;
+
+			@include mdBreakpoint(gtXs) {
+				display: inline-block;
+				vertical-align: middle;
+				width: 450px;
+			}
+
+			h3 { color: $black; }
+
+			a {
+				color: $darkBlue;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+
+			.field {
+				label {
+					color: $grey;
+				}
+			}
+		}
+	}
+}
+
+#HowItWorks {
+	padding: 20px;
+
+	@include mdBreakpoint(sm) {
+		padding: 40px 20px;
+	}
+
+	@include mdBreakpoint(gtXs) {
+		padding: 80px 20px;
+	}
+
+	h2 {
+		font-size: 32px;
+		text-align: center;
+		padding: 0 20px;
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 48px;
+		}
+	}
+
+	h3 {
+		font-weight: 300;
+		font-size: 18px;
+		color: $grey;
+		margin-top: 20px;
+
+		@include mdBreakpoint(sm) {
+			font-size: 20px;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		@include mdBreakpoint(gtXs) {
+			font-size: 24px;
+			text-align: center;
+			line-height: 32px;
+		}
+	}
+}
+
+/**
+ * Forms
+ */
+.field {
+	position: relative;
+	width: 100%;
+	text-align: left;
+
+	.note {
+		text-align: center;
+		padding: 5px 0;
+		font-size: 12px;
+	}
+
+	md-input-container {
+		margin: 10px 0 0;
+
+		&.md-input-invalid {
+
+			label {
+				color: $red;
+			}
+
+			.md-input {
+				border-color: $red;
+			}
+		}
+
+		&.md-input-has-value {
+			md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value label,
+			md-input-container:not(.md-input-invalid).md-input-has-value label {
+				color: $darkBlue;
+			}
+		}
+
+		&.md-input-focused {
+
+			.md-input {
+				border-color: $darkBlue;
+			}
+
+			.md-text {
+				color: $darkBlue;
+			}
+
+			.md-placeholder,
+			label {
+				color: $darkBlue;
+			}
+
+			md-select {
+				border-color: $darkBlue;
+				color: $darkBlue;
+
+				&.md-default-theme .md-select-value.md-select-placeholder,
+				.md-select-value.md-select-placeholder {
+					color: $darkBlue;
+					font-family: $mainFont;
+				}
+
+				&.md-default-theme .md-select-value,
+				.md-select-value {
+					border-color: $darkBlue;
+				}
+
+				&.md-default-theme .md-select-icon,
+				.md-select-icon {
+					color: $darkBlue;
+				}
+			}
+		}
+
+		&:not(.md-input-focused):not(.md-input-invalid) md-select.md-default-theme .md-select-value span:first-child:after,
+		&:not(.md-input-focused):not(.md-input-invalid) md-select .md-select-value span:first-child:after {
+			color: $darkBlue;
+		}
+
+		&.md-default-theme:not(.md-input-focused):not(.md-input-invalid) label.md-required:after,
+		&:not(.md-input-focused):not(.md-input-invalid) label.md-required:after {
+			color: $darkBlue;
+		}
+
+		.md-input {
+			border-color: $darkBlue;
+		}
+
+		.md-placeholder {
+			color: $darkBlue;
+		}
+
+		label {
+			color: $darkBlue;
+			font-family: $mainFont;
+
+			&.md-required {
+				&:after {
+						color: $darkBlue;
+				}
+			}
+		}
+	}
+
+	md-checkbox {
+
+		.md-container {
+			top: 0;
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+		}
+
+		&.md-checked {
+			.md-icon {
+				background: $orange;
+			}
+		}
+		.md-label {
+			color: $darkBlue;
+			font-family: $mainFont;
+			vertical-align: top;
+
+			a {
+				color: $orange;
+
+				&:hover {
+					color: $darkBlue;
+				}
+			}
+		}
+
+		&.md-default-theme:not(.md-checked) .md-icon,
+		&:not(.md-checked) .md-icon {
+			border-color: $darkBlue;
+		}
+
+	}
+
+	/*
+	&.double {
+
+		@include mdBreakpoint(gtSm) {
+			width: 49%;
+			display: inline-block;
+		}
+	}
+
+	input {
+		width: 100%;
+		display: block;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid $grey;
+	}
+
+	label {
+		color: $grey;
+		font-family: $mainFont;
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	*/
+
+	&.checkbox {
+		padding: 0 10px;
+		margin: 10px 0;
+
+		input {
+			display: block;
+			position: absolute;
+			width: auto;
+			left: 0;
+			top: 0;
+
+		}
+		label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 25px;
+			padding-right: 15px;
+			color: #fff;
+
+
+			a {
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&.actions {
+		button {
+			display: block;
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+
+	&.select {
+		label {
+			position: static;
+			display: block;
+			color: $black;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		select {
+			display: block;
+			width: 100%;
+			font-family: $mainFont;
+		}
+	}
+}
+
+/**
+ * Select Dropdown of Material Design
+ */
+md-select {
+	border-color: $darkBlue;
+	font-family: $mainFont;
+	color: $darkBlue;
+
+	&.md-default-theme .md-select-value.md-select-placeholder,
+	.md-select-value.md-select-placeholder {
+		color: $darkBlue;
+		font-family: $mainFont;
+	}
+
+	&.md-default-theme .md-select-value,
+	.md-select-value {
+		border-color: $darkBlue;
+	}
+
+	&.md-default-theme .md-select-icon,
+	.md-select-icon {
+		color: $darkBlue;
+	}
+}
+
+md-select.md-default-theme.ng-invalid.ng-touched .md-select-value,
+md-select.ng-invalid.ng-touched .md-select-value {
+	color: $red !important;
+	border-color: $red !important;
+}
+
+md-input-container md-select.md-default-theme .md-select-value span:first-child:after,
+md-input-container md-select .md-select-value span:first-child:after {
+	color: $red;
+}
+
+md-option .md-text {
+	font-family: $mainFont;
+}

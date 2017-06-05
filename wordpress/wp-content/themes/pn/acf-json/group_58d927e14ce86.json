@@ -1,0 +1,90 @@
+{
+    "key": "group_58d927e14ce86",
+    "title": "Main Content",
+    "fields": [
+        {
+            "key": "field_58d927e151833",
+            "label": "Image",
+            "name": "prospectnow_about_main_content_image",
+            "type": "image",
+            "instructions": "Image that shows up to the left of the content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium_large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58d927e151849",
+            "label": "Section Title",
+            "name": "prospectnow_about_main_content_title",
+            "type": "text",
+            "instructions": "Main Title of Section. Will override the default, which is the default Page Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d927e151855",
+            "label": "Content",
+            "name": "prospectnow_about_main_content",
+            "type": "wysiwyg",
+            "instructions": "Main Content of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "1ST SECTION ON ABOUT TEMPLATE",
+    "modified": 1490632797
+}

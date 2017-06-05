@@ -1,0 +1,145 @@
+{
+    "key": "group_58d903a18d6df",
+    "title": "How it Works",
+    "fields": [
+        {
+            "key": "field_58d903be2330f",
+            "label": "Section Title",
+            "name": "prospectnow_signup_how_it_works_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d903de23310",
+            "label": "Content",
+            "name": "prospectnow_signup_how_it_works_content",
+            "type": "wysiwyg",
+            "instructions": "Section Content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58d903fc23311",
+            "label": "Steps",
+            "name": "prospectnow_signup_how_it_works_steps",
+            "type": "repeater",
+            "instructions": "Loops of Steps",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Step",
+            "sub_fields": [
+                {
+                    "key": "field_58d9041023312",
+                    "label": "Description",
+                    "name": "prospectnow_signup_how_it_works_steps_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_58d9045b23313",
+            "label": "Button Text",
+            "name": "prospectnow_signup_how_it_works_button_text",
+            "type": "text",
+            "instructions": "Orange Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sign Up for Our 3-Day Trial",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d9047023314",
+            "label": "Button URL",
+            "name": "prospectnow_signup_how_it_works_button_url",
+            "type": "page_link",
+            "instructions": "Orange Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-signup.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "2ND SECTION ON SIGNUP TEMPLATE",
+    "modified": 1490633763
+}

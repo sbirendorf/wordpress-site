@@ -37,6 +37,11 @@
 				background: #fff;
 				transition: all .25s ease-in-out;
 				opacity: 1;
+				
+				.menu-visible & {
+					opacity: 0;
+				}
+				
 			}
 
 			&:before,
@@ -54,10 +59,26 @@
 
 			&:before {
 				margin-top: -8px;
+				
+				.menu-visible & {
+					margin-top: 0;
+					-webkit-transform: rotate(40deg);
+					-moz-transform: rotate(40deg);
+					transform: rotate(40deg);	
+				}
+				
 			}
 
 			&:after {
 				margin-top: 8px;
+				
+				.menu-visible & {
+					margin-top: 0;
+					-webkit-transform: rotate(-40deg);
+					-moz-transform: rotate(-40deg);
+					transform: rotate(-40deg);	
+				}
+				
 			}
 		}
 
@@ -85,6 +106,28 @@
 			cursor: pointer;
 		}
 	}
+
+	/* No Menu for Landing pages, or special pages */
+	&.no-menu {
+		text-align: center;
+
+		@include mdBreakpoint(gtXs) {
+			text-align: left;
+			padding-left: 20px;
+		}
+
+		@include mdBreakpoint(gtSm) {
+			padding-left: 0;
+		}
+
+		.mobile-menu {
+			display: none;
+		}
+
+		#Logo {
+			float: none;
+		}
+	}
 }
 
 #Logo {
@@ -95,7 +138,7 @@
 	height: 23px;
 	margin-top: 23px;
 	float: left;
-
+	margin-left: 6px;
 	span { display: none; }
 }
 
@@ -106,5 +149,24 @@
 
 	@include mdBreakpoint(gtXs) {
 		display: block;
+	}
+	@media screen and (min-width: 733px){
+      display: block;
+	}
+	@media screen and (max-width: 733px){
+	    display: grid;
+	    width: 100%;
+	    background: white;
+	    position: absolute;
+	    top: 46px;
+	}
+	
+	.md-button.button, 
+	.md-button.md-default-theme.md-primary.md-fab.button, 
+	.md-button.md-primary.md-fab.button, 
+	.md-button.md-default-theme.md-primary.md-raised.button, 
+	.md-button.md-primary.md-raised.button {
+		font-size: 14px;
+		padding: 0 20px;
 	}
 }

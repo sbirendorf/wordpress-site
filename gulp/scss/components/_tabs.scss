@@ -1,0 +1,49 @@
+md-tabs[md-border-bottom] md-tabs-wrapper {
+	border: none;
+	margin-bottom: 30px;
+
+	md-pagination-wrapper {
+		left: 50%;
+		-webkit-transform: translateX(-50%) !important;
+		-moz-transform: translateX(-50%) !important;
+		transform: translateX(-50%) !important;
+	}
+
+}
+
+md-tabs.md-default-theme .md-tab.md-active,
+md-tabs .md-tab.md-active,
+md-tabs.md-default-theme .md-tab.md-active md-icon,
+md-tabs .md-tab.md-active md-icon,
+md-tabs.md-default-theme .md-tab.md-focused,
+md-tabs .md-tab.md-focused,
+md-tabs.md-default-theme .md-tab.md-focused md-icon,
+md-tabs .md-tab.md-focused md-icon {
+	color: $black;
+	font-weight: bold;
+}
+
+md-tabs.md-default-theme md-ink-bar,
+md-tabs md-ink-bar {
+	background: $lightBlue;
+	color: $lightBlue;
+}
+
+.tabsdemoDynamicHeight md-content {
+	background-color: transparent !important;
+
+	h1:first-child {
+		margin-top: 0;
+	}
+
+	md-tabs {
+	    background: #f6f6f6;
+	    border: 1px solid #e1e1e1;
+
+	    md-tabs-wrapper {
+		    background: white;
+		}
+
+	}
+
+}

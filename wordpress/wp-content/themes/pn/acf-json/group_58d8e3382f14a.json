@@ -1,0 +1,145 @@
+{
+    "key": "group_58d8e3382f14a",
+    "title": "Three Columns",
+    "fields": [
+        {
+            "key": "field_58d8e33831a1e",
+            "label": "Section Title",
+            "name": "prospectnow_broker_three_columns_section_title",
+            "type": "text",
+            "instructions": "Main Title of Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8e4136924e",
+            "label": "Column",
+            "name": "prospectnow_broker_three_columns_column",
+            "type": "repeater",
+            "instructions": "Columns of Section. Limit of 3.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "Add Column",
+            "sub_fields": [
+                {
+                    "key": "field_58d8e4216924f",
+                    "label": "Title",
+                    "name": "prospectnow_broker_three_columns_column_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_58d8e43169250",
+                    "label": "Content",
+                    "name": "prospectnow_broker_three_columns_column_content",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 8,
+                    "new_lines": "wpautop"
+                }
+            ]
+        },
+        {
+            "key": "field_58d8e360027f9",
+            "label": "Button Text",
+            "name": "prospectnow_broker_three_columns_button_text",
+            "type": "text",
+            "instructions": "Orange Button Text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Start My Free Trial",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58d8e36a027fa",
+            "label": "Button URL",
+            "name": "prospectnow_broker_three_columns_button_url",
+            "type": "page_link",
+            "instructions": "Orange Button URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-broker.php"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "5TH SECTION ON BROKER TEMPLATE",
+    "modified": 1491760329
+}

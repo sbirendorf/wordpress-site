@@ -1,0 +1,143 @@
+/*
+Theme Name: Prospect Now
+Theme URI: http://prospectnow.com
+Author: Dayat Technologies
+Author URI: http://dayat.net/
+Description:
+Version: 4.0.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, flexible-width, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: prospectnow
+
+Prospect Now WordPress Theme © 2011-2013 Prospect Now
+Prospect Now is distributed under the terms of the GNU GPL
+*/
+#footer ul li a {
+	font-size: 11px !important;
+}
+#footer ul li a:after {
+	color: #ffffff;
+	margin-left: 6px;
+}
+#footer ul li a {
+	float: left;
+	margin-left: 6px;
+}
+
+.page-id-543 .entry-content p {
+	
+	margin: 9px 13px 0 13px;
+	padding: 5px 0 5px 0;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+#footer ul li a:after {
+	color: #ffffff;
+	margin-left: 6px;
+}
+#menu-interior-footer li a:after{
+	content: "|";
+}
+
+.home #footer ul li a {
+	float: none !important;
+	margin-left: 0px !important;
+	white-space: nowrap !important;
+}
+.menu-interior-footer-container { 
+	width: 278px !important;
+	line-height: 1 !important;
+	display: inline-block !important;
+}
+.carousel-caption a:hover {
+	text-decoration: none !important;
+}
+
+#footer .copyright-text a {
+	color: #fc6b00 !important;
+	font-family: 'Roboto', sans-serif;
+	background-color: transparent !important;
+	line-height: 1 !important;
+	width: auto !important;
+	text-decoration: none !important;
+	text-shadow: none !important;
+	background: transparent !important;
+	height: auto !important;
+}
+
+strong {
+	margin-left: 0px !important;
+}
+
+.entry-meta {
+	padding-left: 15px;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+.single input {
+	float: left;
+	margin-right: 20px !important;
+	margin-bottom: 0px !important;
+}
+
+.single #submit {
+	background: linear-gradient(to bottom, #FCA400 0%, #E47D00 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: medium none;
+	border-radius: 6px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #000000;
+	padding: 5px 20px;
+}
+
+.single #footer {
+	margin-top: 30px !important;
+}
+
+#comments {
+	padding-left: 15px;
+}
+
+.entry-footer {
+	padding-left: 15px;
+}
+
+.single textarea, .single iframe {
+	max-width: 100%;
+}
+#footer {
+    height: auto;
+    padding-top: 0;
+}
+#menu-interior-footer { width: 258px; }
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{float:left;}.aligncenter{}
+
+/* home page twiter */
+.afti-short-timeline li {
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
+	color: #333333;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-bottom: 2px dashed #e8e8e8;
+}
+
+.afti-short-timeline li:last-child {
+	border-bottom: none;
+}
+
+
+.afti-short-timeline li em {
+	color: #a9a9a9;
+}
+a.atfi_link,.atfi_timestamp{
+	display:none !important;
+}
+.home #footer {
+background: url('images/backgroundFooter.png') !important;
+}

@@ -1,0 +1,79 @@
+{
+    "key": "group_58ed3a0799744",
+    "title": "Page Hero",
+    "fields": [
+        {
+            "key": "field_58ed3a079e450",
+            "label": "Title",
+            "name": "prospectnow_page_hero_title",
+            "type": "text",
+            "instructions": "Main Hero Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58ed3a079e459",
+            "label": "Content",
+            "name": "prospectnow_page_hero_content",
+            "type": "wysiwyg",
+            "instructions": "Main Hero Content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-broker.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-demo-callouts.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/tpl-training.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "1ST SECTION ON BROKER AND DEMO TEMPLATES",
+    "modified": 1494334119
+}

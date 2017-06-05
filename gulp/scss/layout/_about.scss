@@ -1,0 +1,127 @@
+.page-template-tpl-about {
+	padding-top: 160px;
+
+	.flex-40,
+	.layout-row>.flex-40 {
+		max-width: 100%;
+
+		@include mdBreakpoint(gtXs) {
+			float: right;
+			max-width: 40%;
+		}
+
+	}
+
+	.flex-60,
+	.layout-row>.flex-60 {
+		max-width: 100%;
+
+		@include mdBreakpoint(gtXs) {
+			float: left;
+			max-width: 60%;
+			padding-right: 5%;
+		}
+
+	}
+
+	.team {
+
+		.row {
+			overflow: hidden;
+			width: 100%;
+
+			@include mdBreakpoint(sm) {
+				text-align: center;
+			}
+
+		}
+
+		.layout-row {
+			margin-top: 80px;
+		}
+
+	}
+
+}
+
+.page-section .member-box {
+	background: #3978AD;
+	border: 1px solid $white;
+	color: $white;
+	height: 100%;
+	padding: 0 20px 10px 20px;
+	text-align: center;
+
+	img {
+		border: 5px solid $white;
+		display: block;
+		margin: -50px auto 20px;
+		width: 100px;
+		height: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+		-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+		box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+	}
+
+	h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	h3 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 0 0 20px 0;
+		opacity: 0.8;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 1.5;
+		text-align: left;
+	}
+}
+
+.page-section.about-contact {
+	background: $lightBlue;
+	color: $white;
+
+	h1 {
+		color: $white;
+	}
+
+	h2 {
+		font-weight: bold;
+	}
+
+	h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	.container {
+		max-width: 760px;
+	}
+
+	.entry-content {
+		padding: 40px;
+		position: relative;
+		text-align: center;
+
+		@include mdBreakpoint(gtXs) {
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+	}
+
+}
