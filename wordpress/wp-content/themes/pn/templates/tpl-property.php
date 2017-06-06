@@ -15,13 +15,13 @@ get_header(); ?>
 if(have_posts()):
 	while(have_posts()): the_post();
 ?>
-<div class="page-header">
+<div class="page-header propertyInfoHeader">
 	<div class="container">
 		<h1><?php the_title(); ?></h1>
 	</div>
 </div>
-<div class="page-wrapper">
-	<div class="container entry-content">
+<div class="page-wrapper propertyWrap">
+	<div class="container propertyInfo entry-content">
 		<?php the_content(); ?>
 
 
@@ -56,7 +56,7 @@ if(have_posts()):
 														<div class="pull-left">
 															<strong class="hidden-lg sharePropertyTitle">Share this property:</strong>
 														</div>
-														<div id="goog_url" style="margin-left:20px;" class="pull-left">
+														<div id="goog_url" style="margin-left:20px;margin-top:2px;" class="pull-left">
 																<img width="35" height="37" src="/wp-content/themes/pn/_assets/img/share_icon.png" id="share_icon">
 														</div>																	
 													</div>																		
@@ -106,9 +106,7 @@ if(have_posts()):
 														</div>
 														</td>
 												<td><img src="/wp-content/themes/pn/_assets/img/greenCheck.png" class="greenCheck" alt="Green Checkmark" />
-											</tr>
-												
-																					
+											</tr>																															
 											<tr>
 												<td class="col">Owner Type 
 												<div class="tooltip">
@@ -149,7 +147,7 @@ if(have_posts()):
 
 				<h2>Sign Up For 3 Day Trial</h2>
 				<span id="login_error"></span>
-				<form id="signup-form-frm1" action="/oldindex.php?page=register&plan=type=emailverify" method="POST" novalidate ng-submit="signup.form.jQueryvalid && signup.form.sendMessage()">
+				<form id="signup-form-frm1" class="propertyInfoForm" action="/oldindex.php?page=register&plan=type=emailverify" method="POST" novalidate ng-submit="signup.form.jQueryvalid && signup.form.sendMessage()">
 					<div class="field double">
 						<label for="first_name"><?php the_field('prospectnow_page_hero_form_first_name_label'); ?></label>
 						<input type="text" id="firstName" placeholder="First name" name="first_name" value="">
@@ -176,7 +174,7 @@ if(have_posts()):
 					</div>
 					<!-- .field -->
 
-					<div class="field select">
+					<div class="field select pullTop10">
 						<label for="user_role"><?php the_field('prospectnow_page_hero_form_industry_role_label'); ?></label>
 
 						<select name="prole" id="prole" class="field input">
@@ -559,37 +557,26 @@ if(have_posts()):
 			
 		</div>	
 
-
-
-<a href="#" data-type="map"><img src="http://maps.googleapis.com/maps/api/staticmap?center=37.37891200,-122.11623800&zoom=14&size=797x200&markers=color:red%7Clabel:P%7C220%20Main%20St,Los%20Altos,CA,94022&key=AIzaSyCR2M7GmUPKONSKO_GkvH3pJY4lCmcrDfU" class="map-click"></a>
-
 		<div class="page-section" id="mapStreetView">
 		
 			<div class="container">
 			
 			    <div class="row">
 					
-					<div class="col-md-12">
+					<div class="col-md-6">
 						
 						<div class="propertyInfoMap">
 							<h1>Map</h1>
-							<a href="#" data-type="map" class='the-map'><img src="http://maps.googleapis.com/maps/api/staticmap?center=37.37891200,-122.11623800&zoom=14&size=797x200&markers=color:red%7Clabel:P%7C220%20Main%20St,Los%20Altos,CA,94022&key=AIzaSyCR2M7GmUPKONSKO_GkvH3pJY4lCmcrDfU" class="map-click"></a>
+							<a href="#" data-type="map" class="the-map"><img src="http://maps.googleapis.com/maps/api/staticmap?center=37.37891200,-122.11623800&zoom=14&size=797x200&markers=color:red%7Clabel:P%7C220%20Main%20St,Los%20Altos,CA,94022&key=AIzaSyCR2M7GmUPKONSKO_GkvH3pJY4lCmcrDfU" class="map-click"></a>
 						</div>
 						
 					</div>
 									
-				
-				</div>
-
-
-				<div class="row">
-
-					
-					<div class="col-md-12">
+					<div class="col-md-6">
 
 						<div class=" propertyStreetView">
 							<h1>Street View</h1>
-							<a href="https://www.google.com/maps/place/220+Main+St,+Los+Altos,+CA+94022/@37.3787239,-122.1160107,3a,60y,90t/data=!3m6!1e1!3m4!1sZEj2r54sG07NKEgmN49y6w!2e0!7i13312!8i6656!4m5!3m4!1s0x808fb0efb5ccfbbb:0xddfa460f8e3718b7!8m2!3d37.3789233!4d-122.1162133!6m1!1e1?hl=en" target="_blank"><img src="/wp-content/themes/pn/_assets/img/streetView.jpg" width="100%" height="100%" alt="Street View" /></a>
+							<a href="https://www.google.com/maps/place/220+Main+St,+Los+Altos,+CA+94022/@37.3787239,-122.1160107,3a,60y,90t/data=!3m6!1e1!3m4!1sZEj2r54sG07NKEgmN49y6w!2e0!7i13312!8i6656!4m5!3m4!1s0x808fb0efb5ccfbbb:0xddfa460f8e3718b7!8m2!3d37.3789233!4d-122.1162133!6m1!1e1?hl=en" target="_blank"><img src="/wp-content/themes/pn/_assets/img/streetView.jpg" width="100%" height="auto" alt="Street View" /></a>
 						</div>				
 					
 				   </div>					
