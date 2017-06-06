@@ -12,7 +12,7 @@ get_header(); ?>
 	if(have_posts()):
 		while(have_posts()): the_post();
 ?>
-<div class="page-header careersHeader">
+<div class="page-header careersHeader" style="background:url('http://localhost/wordpress-site/wordpress/wp-content/themes/pn/_assets/img/careers/careersHeader.jpg')no-repeat;">
 	<div class="container">
 		<h1><?php the_title(); ?></h1>
 		<h2>Come Help Us Change the Real Estate Industry</h2>		
@@ -22,65 +22,101 @@ get_header(); ?>
 	<div class="container entry-content">
 		<?php the_content(); ?>
 		
-		
-<?php endwhile; ?>
-<?php endif; ?>
-		
-		<?php
-			$args = array(
-			'post_type'			=>	'career',
-			'orderby'			=>	'menu_order',
-			'order'				=>	'ASC',
-			'posts_per_page'	=>	9999,
-			);
-		?>
-		<?php $posts = new WP_Query( $args ); ?>
-		
-		<?php if($posts->have_posts()) : ?>
-		
-		<div class="accordion">
-			
-			<?php while($posts->have_posts()) : $posts->the_post(); ?>
-			
-			<?php
-				// variables
-				$jobLocation = get_field('prospectnow_career_location');
-				$jobType = get_field('prospectnow_career_employment_type');
-				$jobUrl = get_field('prospectnow_career_external_job_link');	
-			?>
-			
-			<div id="career-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<h2 class="accordion-title"><?php the_title(); ?></h2>
-				<div class="accordion-content">
+	</div>
+	
+	<div class="page-section" id="weAreHiring">
+	
+		<div class="container">			
+	
+			<div class="row">				
+				
+				<div class="col-md-12">
+				
+					<div class="weHiringLarge">We Are Hiring</div>
 					
-					<?php if ( $jobLocation || $jobType ) : ?>
-					<ul class="career-details">
-						<?php if ( $jobLocation ) : ?>
-						<li><?php echo $jobLocation; ?></li>
-						<?php endif; ?>
-						<?php if ( $jobType ) : ?>
-						<li><?php echo $jobType; ?></li>
-						<?php endif; ?>
-					</ul>
-					<?php endif; ?>
-					
-					<?php the_content(); ?>
-					
-					<?php if ( $jobUrl ) : ?>
-					<?php $job_url = get_field('prospectnow_career_external_job_link'); ?>
-					<p><md-button href="<?php echo $jobUrl; ?>" class="md-raised button orange">I'm Interested</md-button>
-					<?php endif; ?>
+					<h4 class="weHiringSub">See Current Job Openings Below</h4>		
 					
 				</div>
+				
 			</div>
-			
-			<?php endwhile; ?>
-			
+
 		</div>
 		
-		<?php endif; wp_reset_postdata(); ?>
+	</div>		
+	
+	<div class="page-section" id="jobPostings">
+	
+		<div class="container">			
+	
+			<div class="row">				
+				
+				<div class="col-md-12">	
+				
+					<?php endwhile; ?>
+					<?php endif; ?>
+					
+					<?php
+						$args = array(
+						'post_type'			=>	'career',
+						'orderby'			=>	'menu_order',
+						'order'				=>	'ASC',
+						'posts_per_page'	=>	9999,
+						);
+					?>
+					<?php $posts = new WP_Query( $args ); ?>
+					
+					<?php if($posts->have_posts()) : ?>
+					
+					<div class="accordion">
+						
+						<?php while($posts->have_posts()) : $posts->the_post(); ?>
+						
+						<?php
+							// variables
+							$jobLocation = get_field('prospectnow_career_location');
+							$jobType = get_field('prospectnow_career_employment_type');
+							$jobUrl = get_field('prospectnow_career_external_job_link');	
+						?>
+						
+						<div id="career-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<h2 class="accordion-title"><?php the_title(); ?></h2>
+							<div class="accordion-content">
+								
+								<?php if ( $jobLocation || $jobType ) : ?>
+								<ul class="career-details">
+									<?php if ( $jobLocation ) : ?>
+									<li><?php echo $jobLocation; ?></li>
+									<?php endif; ?>
+									<?php if ( $jobType ) : ?>
+									<li><?php echo $jobType; ?></li>
+									<?php endif; ?>
+								</ul>
+								<?php endif; ?>
+								
+								<?php the_content(); ?>
+								
+								<?php if ( $jobUrl ) : ?>
+								<?php $job_url = get_field('prospectnow_career_external_job_link'); ?>
+								<p><md-button href="<?php echo $jobUrl; ?>" class="md-raised button orange">I'm Interested</md-button>
+								<?php endif; ?>
+								
+							</div>
+						</div>
+						
+						<?php endwhile; ?>
+						
+					</div>
+					
+					<?php endif; wp_reset_postdata(); ?>					
+				
+				</div>
+				
+			</div>
+
+		</div>		
 		
-	</div>
+	</div>	
+	
 </div>
 
 <?php get_footer(); ?>

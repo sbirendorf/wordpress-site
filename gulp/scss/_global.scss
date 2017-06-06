@@ -1805,6 +1805,198 @@ a.editColour {
     margin-bottom: 20px;
 }
 
+.page-header.careersHeader {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.page-header.careersHeader h1 {
+    font-size: 70px;
+	margin-bottom: -10px;
+	position: relative;
+	top: -15px;
+}
+.page-header.careersHeader h2 {
+    font-size: 25px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	top: -20px;	
+}
+.careersPage .container.entry-content {
+    margin-top: -100px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.1);	
+    padding: 0 50px;	
+}
+#jobPostings {
+	padding: 50px 20px 40px 20px;
+}
+#jobPostings .container {
+	box-shadow: none;
+	background: 0;
+}
+#jobPostings .accordion-title {
+	color: #111;
+	font-weight: 600;
+    margin-left: -30px;	
+}
+#jobPostings .accordion .accordion-title:before {
+    opacity: 1;
+    left: -20px;
+	position: relative;
+}
+#jobPostings .accordion .show-content .accordion-content {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    max-height: 9999px;
+    opacity: 1;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 50px;
+}
+#jobPostings .accordion-content h2 {
+	text-align: left;
+	color: #111;
+	font-weight: 600;
+}
+#jobPostings .accordion-content ul {
+	line-height: 25px;
+}
+#jobPostings .accordion-content ol {
+	line-height: 25px;
+}
+#jobPostings .accordion-content p {
+	line-height: 21px;
+}
+a.greenLink {
+	color: #3ca429 !important;
+}
+#jobPostings .career-details li {
+    border: 2px solid #3ca429 !important;
+    font-weight: 600 !important;
+    color: #3ca429 !important; 
+}
+#weAreHiring {
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+	margin-bottom: -70px;
+}
+#weAreHiring .container {
+	box-shadow: none;
+	background: none;
+}
+.careersPage .container.entry-content p {
+	line-height: 27px;
+}
+.weHiringLarge {
+    font-size: 50px;
+    color: #111;
+    font-weight: 600;
+	margin-bottom: -20px;
+}
+h4.weHiringSub {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f79000;
+    margin-bottom: 0px;	
+}
+div#weAreHiring .row {
+    padding-bottom: 0px;
+}
+.row.padding10Top {
+    padding-top: 20px;
+	padding-bottom: 30px;
+}
+ul.unordered {
+    list-style: none;
+	padding-left: 10px;
+}
+.unordered li {
+	color: #111;
+}
+.unordered img {
+	position: relative;
+	top: 9px;
+	left: -9px;
+}
+.careersPage hr {
+    opacity: 0.2;	
+}
+.careerBtn {
+    margin-top: 40px;
+}
+
+@media (max-width: 1279px) {
+	.page-header.careersHeader {
+		padding-top: 120px;
+	}
+}
+@media (max-width: 1199px) {
+	.paddingtop25 {
+		padding-top: 25px;
+	}
+}
+@media (max-width: 960px) {
+	.paddingtop25 {
+		padding-top: 25px;
+	}
+	.careersPage .container.entry-content {
+		padding: 50px 50px 20px 50px;
+	}	
+	.weHiringLarge {
+		margin-top: 50px;
+	}	
+	#jobPostings {
+		padding: 60px 0px 40px 0px;
+	}	
+	#jobPostings .accordion-content p {
+		font-size: 16px;
+	}	
+	#jobPostings .col-md-12 {
+		padding-left: 0;
+		padding-right: 0;		
+	}
+}
+@media (max-width: 733px) {
+	.page-header.careersHeader {
+		padding-top: 170px;
+	}	
+}
+@media (max-width: 599px) {
+	#jobPostings .accordion .accordion-title:before {
+		left: -10px;
+	}	
+	#jobPostings .accordion-title {
+		margin-left: 0px;
+		font-size: 19px;
+	}
+	.careersPage .container.entry-content {
+		padding: 50px 0 30px 0;
+	}	
+}
+@media (max-width: 520px) {
+	.weHiringLarge {
+		font-size: 35px;
+		text-align: left;
+	}	
+	h4.weHiringSub {
+		font-size: 19px;
+		text-align: left;		
+	}		
+}
+@media (max-width: 460px) {
+	#jobPostings .accordion-title {
+		margin-left: 0px;
+		font-size: 16px;
+	}	
+	#jobPostings .accordion .show-content .accordion-content {
+		border: 0;
+		padding: 0px;
+	}	
+}
+
+
 /*  Bootstrap Columns  */
 
 .row {
